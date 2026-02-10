@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Permisos Aduaneros Panamá | Legal Logístic Innova</title>
+    <meta name="description" content="Gestión de permisos aduaneros en Panamá con tramitación integral ante organismos anuentes. Legal Logístic Innova, especialistas en MINSA, MIDA, ASEP y entidades regulatorias con más de 10 años.">
+    <meta name="keywords" content="permisos aduaneros panama, organismos anuentes panama, MINSA panama, MIDA panama, ASEP panama, tramites permisos panama">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Gestión de Permisos Aduaneros Panamá",
+        "description": "Servicio especializado de gestión de permisos y autorizaciones ante organismos anuentes en Panamá",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Legal Logístic Innova",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9",
+                "addressLocality": "Ciudad de Panamá",
+                "addressRegion": "Panamá",
+                "postalCode": "0801",
+                "addressCountry": "PA"
+            },
+            "telephone": "+50766977997"
+        },
+        "areaServed": ["Ciudad de Panamá", "Colón", "David", "Santiago", "Chitré"],
+        "serviceType": "Gestión de Permisos Aduaneros",
+        "category": "Servicios Aduaneros"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 52, 96, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #1e88e5;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8ecef;
+            margin-top: 90px;
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-list a {
+            color: #1e88e5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: #0f3460;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #0f3460;
+            margin-bottom: 2rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #5a6c7d;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .main-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a6c7d;
+        }
+
+        .main-text p {
+            margin-bottom: 2rem;
+        }
+
+        /* Agencies Grid */
+        .agencies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .agency-card {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .agency-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .agency-logo {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #1e88e5;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .agency-card h4 {
+            font-size: 1.4rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+
+        .agency-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .permit-types {
+            background: rgba(30, 136, 229, 0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .permit-types strong {
+            color: #0f3460;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .permit-list {
+            color: #5a6c7d;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e8ecef;
+            color: #34495e;
+            font-weight: 500;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.5rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+        }
+
+        /* Process Timeline */
+        .process-timeline {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .timeline-steps {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .step-number {
+            background: #1e88e5;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-content {
+            flex: 1;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .step-content h4 {
+            color: #0f3460;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .step-content p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .timeline-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 25px;
+            top: 50px;
+            width: 2px;
+            height: 60px;
+            background: #e8ecef;
+            z-index: 1;
+        }
+
+        /* Related Services */
+        .related-services {
+            background: #ffffff;
+            padding: 4rem 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #5a6c7d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .service-link {
+            display: inline-block;
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.3rem;
+        }
+
+        .service-link:hover {
+            color: #0f3460;
+            border-bottom-color: #1e88e5;
+            transform: translateX(5px);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            line-height: 1.8;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .agencies-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+
+            .timeline-step {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+
+            .timeline-step:not(:last-child)::after {
+                display: none;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" type="image/png" href="LOGO.webp">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LEGAL LOGÍSTIC INNOVA</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="despachante-de-aduana-panama.html">Servicios</a>
+                <a href="#contacto" class="contact-btn">Cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="breadcrumb-container">
+            <div class="breadcrumb-list">
+                <a href="index.html">Inicio</a> &gt; 
+                <a href="despachante-de-aduana-panama.html">Despachante de Aduana Panamá</a> &gt; 
+                <span>Gestión de Permisos Aduaneros Panamá</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Gestión de Permisos Aduaneros Panamá - Órganos Anuentes</h1>
+            <p class="subtitle">Especialistas en gestión integral de permisos y autorizaciones ante organismos anuentes con tramitación completa ante MINSA, MIDA, ASEP y entidades regulatorias para operaciones de importación y exportación.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Solicitar Gestión</a>
+                <a href="#organismos" class="btn-primary">Ver Organismos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-text">
+                    <div class="content-section">
+                        <h2>Servicios Especializados de Gestión de Permisos Aduaneros en Panamá</h2>
+                        <p>En Legal Logístic Innova ofrecemos servicios integrales de gestión de permisos y autorizaciones ante organismos anuentes que regulan la importación y exportación de mercaderías especializadas en Panamá. Nuestro equipo mantiene relaciones directas con todas las entidades regulatorias relevantes, conoce profundamente sus procedimientos específicos y cuenta con la experiencia necesaria para navegar eficientemente los complejos procesos de autorización requeridos para productos regulados.</p>
+
+                        <p>La gestión correcta de permisos ante organismos anuentes es fundamental para evitar demoras costosas, rechazos de mercaderías, multas por incumplimiento normativo y problemas operativos que pueden afectar significativamente las operaciones comerciales. Cada organismo tiene requisitos específicos, tiempos de tramitación particulares, documentación técnica requerida y procedimientos que deben seguirse meticulosamente para obtener las autorizaciones necesarias antes del arribo de mercaderías al territorio aduanero panameño.</p>
+
+                        <h3>Coordinación Estratégica con Organismos Reguladores</h3>
+                        <p>Establecemos coordinación estratégica anticipada con los organismos anuentes relevantes para cada tipo de mercadería, evaluando requisitos específicos, verificando documentación requerida, programando inspecciones necesarias y gestionando autorizaciones con tiempo suficiente para evitar demoras en el proceso de despacho aduanero. Esta coordinación proactiva incluye comunicación directa con funcionarios especializados, seguimiento de estatus de solicitudes y gestión de cualquier requerimiento adicional que pueda surgir durante el proceso de evaluación.</p>
+
+                        <p>Nuestro conocimiento profundo de los procedimientos de cada organismo nos permite anticipar potenciales obstáculos, preparar documentación completa desde el inicio, coordinar inspecciones pre-embarque cuando sean necesarias y optimizar tiempos de respuesta mediante el uso de procedimientos expeditos disponibles para operadores calificados. Esta experiencia acumulada es especialmente valiosa para empresas que manejan productos de alta complejidad regulatoria o que requieren múltiples autorizaciones simultáneas.</p>
+
+                        <h3>Gestión Integral ante MINSA (Ministerio de Salud)</h3>
+                        <p>Para productos alimenticios, farmacéuticos, cosméticos, dispositivos médicos, suplementos nutricionales y productos de higiene personal, gestionamos integralmente las autorizaciones requeridas por el Ministerio de Salud. Esto incluye registros sanitarios, permisos de importación, certificaciones de libre venta, autorizaciones de establecimientos, permisos para muestras médicas y cualquier otra documentación específica según la naturaleza del producto y su uso previsto en el mercado panameño.</p>
+
+                        <p>Nuestro servicio incluye preparación de expedientes técnicos, coordinación con laboratorios acreditados para análisis requeridos, gestión de certificaciones internacionales necesarias, preparación de etiquetado conforme a regulaciones locales y seguimiento especializado de cada solicitud hasta su aprobación final. Para productos farmacéuticos y dispositivos médicos, coordinamos adicionalmente con la Dirección Nacional de Farmacias y Drogas para cumplimiento de regulaciones específicas aplicables a estos productos sensibles.</p>
+
+                        <h3>Tramitación ante MIDA (Ministerio de Desarrollo Agropecuario)</h3>
+                        <p>Para productos agrícolas, pecuarios, pesqueros, alimentos de origen animal, semillas, fertilizantes, plaguicidas y productos veterinarios, gestionamos permisos y certificaciones ante el Ministerio de Desarrollo Agropecuario. Esto incluye permisos fitosanitarios, certificaciones zoosanitarias, autorizaciones para importación de semillas, permisos para productos veterinarios, certificaciones de libre venta para productos agropecuarios y documentación para productos orgánicos certificados.</p>
+
+                        <p>Coordinamos directamente con SENASA (Servicio Nacional de Sanidad Agropecuaria) para inspecciones pre-embarque, verificación de origen, certificaciones de establecimientos productores y cualquier otro requerimiento sanitario específico. Para productos pesqueros, gestionamos autorizaciones ante la Autoridad de los Recursos Acuáticos de Panamá (ARAP) incluyendo permisos de importación, certificaciones de origen y documentación para productos pesqueros procesados.</p>
+
+                        <h3>Autorizaciones ante ASEP (Autoridad de los Servicios Públicos)</h3>
+                        <p>Para equipos de telecomunicaciones, dispositivos de radiofrecuencia, equipos de transmisión, aparatos de telecomunicaciones móviles y dispositivos que utilizan espectro radioeléctrico, gestionamos las autorizaciones requeridas por la Autoridad de los Servicios Públicos. Esto incluye certificaciones de homologación, permisos de importación para equipos de telecomunicaciones, autorizaciones para dispositivos de radiofrecuencia y documentación técnica para equipos que requieren aprobación previa antes de su comercialización en Panamá.</p>
+
+                        <p>Nuestro servicio incluye preparación de especificaciones técnicas, coordinación con laboratorios de pruebas acreditados internacionalmente, gestión de certificaciones de conformidad y seguimiento de procesos de homologación hasta obtención de autorizaciones finales. Para equipos complejos que requieren múltiples certificaciones, coordinamos con organismos internacionales relevantes para obtener documentación técnica que facilite el proceso de aprobación local.</p>
+
+                        <h3>Gestión ante Otros Organismos Especializados</h3>
+                        <p>Gestionamos permisos ante organismos especializados según el tipo específico de mercadería, incluyendo la Autoridad Nacional del Ambiente (ANAM) para productos que requieren evaluación ambiental, Dirección General de Ingresos (DGI) para productos con regulaciones fiscales especiales, Instituto Panameño de Habilitación Educativa (IPHE) para equipos educativos especializados, Contraloría General de la República para equipos de control y medición, y otros organismos según requisitos particulares de cada tipo de producto.</p>
+
+                        <p>Para productos controlados que requieren licencias especiales, coordinamos con autoridades de control correspondientes incluyendo documentación para sustancias controladas, permisos para equipos de seguridad, autorizaciones para productos de doble uso y cualquier otra documentación requerida por normativas especializadas. Esta coordinación incluye preparación de expedientes completos, seguimiento de procesos de evaluación y gestión de cualquier requerimiento adicional que pueda surgir durante la tramitación.</p>
+
+                        <h3>Documentación Técnica y Respaldo Normativo</h3>
+                        <p>Preparamos y gestionamos toda la documentación técnica requerida por los organismos anuentes, incluyendo fichas técnicas detalladas, certificaciones de origen, certificados de libre venta, análisis de laboratorio, especificaciones de fabricante, manuales de usuario, hojas de datos de seguridad, certificaciones internacionales y cualquier otra documentación específica según requisitos particulares de cada entidad regulatoria.</p>
+
+                        <p>Mantenemos archivos organizados de toda la documentación gestionada, facilitando renovaciones futuras, actualizaciones de permisos, consultas de autoridades y auditorías de cumplimiento. Esta organización documental incluye sistemas de alerta para vencimientos de permisos, actualizaciones regulatorias que puedan afectar autorizaciones vigentes y cambios en procedimientos que requieran adaptaciones en documentación preparada.</p>
+
+                        <h3>Seguimiento y Monitoreo Especializado</h3>
+                        <p>Proporcionamos seguimiento detallado de cada solicitud de permiso desde su presentación hasta su aprobación final, incluyendo monitoreo de tiempos de respuesta, gestión de requerimientos adicionales, coordinación de inspecciones cuando sean necesarias y comunicación constante con nuestros clientes sobre el estatus de cada tramitación. Este seguimiento incluye alertas proactivas sobre potenciales demoras, sugerencias para acelerar procesos cuando sea posible y coordinación con otros aspectos del despacho aduanero para optimizar tiempos totales de operación.</p>
+
+                        <p>Para empresas con operaciones recurrentes, desarrollamos calendarios de renovación de permisos, protocolos para actualizaciones de documentación, sistemas de monitoreo de cambios regulatorios y procedimientos estandarizados que faciliten tramitaciones futuras. Esto incluye capacitación a equipos internos sobre mantenimiento de documentación actualizada, procedimientos para solicitudes de renovación y mejores prácticas para mantener cumplimiento normativo continuo.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Contacto Inmediato</h3>
+                    
+                    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20gestión%20de%20permisos%20aduaneros%20en%20Panamá" class="whatsapp-btn">
+                        +507 6697-7997
+                    </a>
+
+                    <h3>Organismos Principales</h3>
+                    <ul class="features-list">
+                        <li>MINSA - Ministerio de Salud</li>
+                        <li>MIDA - Min. Desarrollo Agropecuario</li>
+                        <li>ASEP - Autoridad Servicios Públicos</li>
+                        <li>ANAM - Autoridad Nacional Ambiente</li>
+                        <li>SENASA - Servicio Nacional Sanidad</li>
+                        <li>ARAP - Autoridad Recursos Acuáticos</li>
+                        <li>DGI - Dirección General Ingresos</li>
+                        <li>Contraloría General República</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agencies Section -->
+    <section class="main-content" id="organismos" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="content-section">
+                <h2>Principales Organismos Anuentes en Panamá</h2>
+                <p>Gestionamos permisos ante todos los organismos reguladores que controlan la importación y exportación de mercaderías especializadas.</p>
+            </div>
+
+            <div class="agencies-grid">
+                <div class="agency-card">
+                    <div class="agency-logo">🏥</div>
+                    <h4>MINSA - Ministerio de Salud</h4>
+                    <p>Regula productos alimenticios, farmacéuticos, cosméticos, dispositivos médicos y productos de higiene personal.</p>
+                    <div class="permit-types">
+                        <strong>Permisos principales:</strong>
+                        <div class="permit-list">• Registros sanitarios<br>• Permisos de importación<br>• Certificaciones libre venta<br>• Autorizaciones establecimientos</div>
+                    </div>
+                </div>
+
+                <div class="agency-card">
+                    <div class="agency-logo">🌱</div>
+                    <h4>MIDA - Ministerio Desarrollo Agropecuario</h4>
+                    <p>Controla productos agrícolas, pecuarios, pesqueros, semillas, fertilizantes y productos veterinarios.</p>
+                    <div class="permit-types">
+                        <strong>Certificaciones principales:</strong>
+                        <div class="permit-list">• Permisos fitosanitarios<br>• Certificaciones zoosanitarias<br>• Autorizaciones semillas<br>• Permisos productos veterinarios</div>
+                    </div>
+                </div>
+
+                <div class="agency-card">
+                    <div class="agency-logo">📡</div>
+                    <h4>ASEP - Autoridad Servicios Públicos</h4>
+                    <p>Autoriza equipos de telecomunicaciones, dispositivos radiofrecuencia y aparatos de transmisión.</p>
+                    <div class="permit-types">
+                        <strong>Homologaciones:</strong>
+                        <div class="permit-list">• Certificaciones homologación<br>• Permisos equipos telecomunicaciones<br>• Autorizaciones radiofrecuencia<br>• Aprobaciones técnicas</div>
+                    </div>
+                </div>
+
+                <div class="agency-card">
+                    <div class="agency-logo">🌍</div>
+                    <h4>ANAM - Autoridad Nacional Ambiente</h4>
+                    <p>Evalúa productos que requieren autorización ambiental, sustancias químicas y materiales especiales.</p>
+                    <div class="permit-types">
+                        <strong>Evaluaciones:</strong>
+                        <div class="permit-list">• Estudios impacto ambiental<br>• Permisos sustancias químicas<br>• Autorizaciones especiales<br>• Certificaciones ambientales</div>
+                    </div>
+                </div>
+
+                <div class="agency-card">
+                    <div class="agency-logo">🐄</div>
+                    <h4>SENASA - Servicio Nacional Sanidad</h4>
+                    <p>Inspecciones sanitarias para productos agropecuarios, control de plagas y certificaciones orgánicas.</p>
+                    <div class="permit-types">
+                        <strong>Inspecciones:</strong>
+                        <div class="permit-list">• Inspecciones pre-embarque<br>• Verificaciones origen<br>• Certificaciones establecimientos<br>• Control sanitario</div>
+                    </div>
+                </div>
+
+                <div class="agency-card">
+                    <div class="agency-logo">🐟</div>
+                    <h4>ARAP - Autoridad Recursos Acuáticos</h4>
+                    <p>Regula productos pesqueros, acuicultura y derivados de recursos acuáticos marinos y continentales.</p>
+                    <div class="permit-types">
+                        <strong>Autorizaciones pesqueras:</strong>
+                        <div class="permit-list">• Permisos importación pesqueros<br>• Certificaciones origen<br>• Productos procesados<br>• Derivados acuáticos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="process-timeline">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 3rem; font-family: 'Times New Roman', serif;">Proceso de Gestión de Permisos</h2>
+            
+            <div class="timeline-steps">
+                <div class="timeline-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Análisis Regulatorio</h4>
+                        <p>Evaluación de requisitos específicos según tipo de mercadería y organismos anuentes aplicables.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Preparación Documental</h4>
+                        <p>Elaboración de expedientes técnicos, fichas especializadas y documentación requerida.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Presentación Solicitudes</h4>
+                        <p>Presentación formal ante organismos correspondientes con documentación completa y respaldo técnico.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Seguimiento Activo</h4>
+                        <p>Monitoreo de estatus, gestión de requerimientos adicionales y coordinación de inspecciones.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Obtención Autorizaciones</h4>
+                        <p>Recepción de permisos aprobados, verificación de documentación y entrega al cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <h2>¿Necesita Gestionar Permisos Ante Organismos Anuentes?</h2>
+            <p>Contacte a nuestros especialistas y acelere la obtención de autorizaciones requeridas para sus operaciones de comercio exterior con gestión integral y seguimiento especializado.</p>
+            <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20gestión%20de%20permisos%20aduaneros%20en%20Panamá" class="btn-primary">Contactar Especialista</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LEGAL LOGÍSTIC INNOVA - GESTIÓN DE PERMISOS ADUANEROS PANAMÁ</strong></p>
+            <p>Especialistas en Organismos Anuentes y Autorizaciones Regulatorias</p>
+            <p>Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9</p>
+            <p>WhatsApp: +507 6697-7997 | Ciudad de Panamá, República de Panamá</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20gestión%20de%20permisos%20aduaneros%20en%20Panamá" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 52, 96, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 52, 96, 0.96)';
+            }
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

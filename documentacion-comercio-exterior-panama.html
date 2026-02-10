@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación de Comercio Exterior Panamá | Legal Logístic Innova</title>
+    <meta name="description" content="Servicios especializados en documentación de comercio exterior en Panamá con gestión integral de certificados, permisos, declaraciones y trámites aduaneros para importación y exportación. Empresa especializada con más de 10 años de experiencia.">
+    <meta name="keywords" content="documentacion comercio exterior panama, certificados origen panama, permisos importacion panama, declaraciones aduaneras panama, trámites comercio exterior, documentos exportacion panama, gestion documentaria internacional">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Documentación de Comercio Exterior Panamá",
+        "description": "Servicios especializados en gestión documentaria para comercio exterior con certificados, permisos y trámites aduaneros",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Legal Logístic Innova",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9",
+                "addressLocality": "Ciudad de Panamá",
+                "addressRegion": "Panamá",
+                "postalCode": "0801",
+                "addressCountry": "PA"
+            },
+            "telephone": "+50766977997"
+        },
+        "areaServed": ["Ciudad de Panamá", "Colón", "David", "Santiago", "Chitré", "Panamá Oeste", "Coclé", "Veraguas", "Herrera", "Los Santos", "Bocas del Toro", "Chiriquí"],
+        "serviceType": "Documentación de Comercio Exterior",
+        "category": "Empresa de Importación y Exportación"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 52, 96, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #1e88e5;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8ecef;
+            margin-top: 90px;
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-list a {
+            color: #1e88e5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: #0f3460;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #0f3460;
+            margin-bottom: 2rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #5a6c7d;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .main-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a6c7d;
+        }
+
+        .main-text p {
+            margin-bottom: 2rem;
+        }
+
+        /* Documents Cards */
+        .documents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .document-card {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .document-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .document-icon {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #1e88e5;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .document-card h4 {
+            font-size: 1.4rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+
+        .document-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .document-features {
+            background: rgba(30, 136, 229, 0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .document-features strong {
+            color: #0f3460;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-details {
+            color: #5a6c7d;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e8ecef;
+            color: #34495e;
+            font-weight: 500;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.5rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: #1e88e5;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .benefit-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+
+        /* Process Section */
+        .process-section {
+            background: #ffffff;
+            padding: 4rem 0;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 3px solid #1e88e5;
+            position: relative;
+        }
+
+        .process-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .process-number {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1e88e5;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .process-card h4 {
+            font-size: 1.3rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .process-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .process-details {
+            background: rgba(30, 136, 229, 0.1);
+            padding: 0.8rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .process-details span {
+            color: #0f3460;
+            font-size: 0.85rem;
+            display: block;
+            line-height: 1.4;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            line-height: 1.8;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .documents-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" type="image/png" href="LOGO.webp">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LEGAL LOGÍSTIC INNOVA</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="empresa-importacion-exportacion-panama.html">Empresa de Importación y Exportación</a>
+                <a href="#contacto" class="contact-btn">Cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="breadcrumb-container">
+            <div class="breadcrumb-list">
+                <a href="index.html">Inicio</a> &gt; 
+                <a href="empresa-importacion-exportacion-panama.html">Empresa de Importación y Exportación Panamá</a> &gt; 
+                <span>Documentación de Comercio Exterior Panamá</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Documentación de Comercio Exterior Panamá - Gestión Integral</h1>
+            <p class="subtitle">Servicios especializados en gestión documentaria para comercio exterior con preparación, revisión y tramitación de certificados, permisos, declaraciones y toda documentación requerida para operaciones de importación y exportación desde Panamá.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Consultar Documentación</a>
+                <a href="#documentos" class="btn-primary">Ver Documentos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-text">
+                    <div class="content-section">
+                        <h2>Servicios Especializados en Documentación de Comercio Exterior</h2>
+                        <p>En Legal Logístic Innova ofrecemos servicios integrales de gestión documentaria para comercio exterior que garantizan exactitud, cumplimiento normativo y optimización de procesos en todas las operaciones de importación y exportación desde Panamá. Nuestra experiencia de más de 10 años en documentación comercial internacional nos permite manejar eficientemente la complejidad de requisitos documentales específicos por país, tipo de producto y normativas aplicables.</p>
+
+                        <p>La documentación correcta y completa es fundamental para el éxito de operaciones de comercio exterior, ya que errores u omisiones pueden generar demoras costosas, rechazos en aduanas, sanciones económicas e incluso la pérdida de mercancías. Nuestros servicios están diseñados para prevenir estos riesgos mediante procesos sistemáticos de preparación, revisión y validación de toda documentación requerida para operaciones comerciales internacionales.</p>
+
+                        <h3>Gestión de Certificados de Origen Preferenciales</h3>
+                        <p>Coordinamos la obtención y gestión de certificados de origen requeridos para aprovechamiento de tratados de libre comercio suscritos por Panamá. Esto incluye certificados de origen para Estados Unidos (Certificado de Origen US-Panamá TPA), Unión Europea (Certificado de Origen EUR.1), Canadá, Chile, Singapur, EFTA y otros socios comerciales con los que Panamá mantiene acuerdos preferenciales.</p>
+
+                        <p>Realizamos análisis detallado de reglas de origen específicas de cada tratado comercial para determinar elegibilidad de productos, preparación de declaraciones de origen, coordinación con cámaras de comercio y autoridades competentes para certificación, y gestión de documentación complementaria requerida para sustentar origen preferencial. Nuestra experiencia garantiza cumplimiento exacto de requisitos y maximización de beneficios arancelarios.</p>
+
+                        <h3>Preparación de Documentación Comercial Internacional</h3>
+                        <p>Elaboramos y gestionamos toda la documentación comercial básica requerida para operaciones de comercio exterior incluyendo factura comercial internacional, lista de empaque (packing list), conocimientos de embarque (Bill of Lading), guías aéreas (Air Waybill), certificados de seguro internacional, documentos de transporte multimodal y cualquier otro documento específico según modalidad de transporte y términos comerciales (Incoterms) acordados.</p>
+
+                        <p>Nuestros procesos incluyen verificación de consistencia entre todos los documentos comerciales, validación de información contra requisitos de países de destino, traducción cuando sea necesario, y preparación de conjuntos documentales completos según especificaciones de bancos para operaciones de cobranza documentaria o cartas de crédito. Garantizamos exactitud en datos de productos, valores, cantidades y términos comerciales.</p>
+
+                        <h3>Gestión de Permisos y Autorizaciones Especiales</h3>
+                        <p>Coordinamos obtención de permisos, autorizaciones y certificaciones específicas requeridas para importación o exportación de productos regulados. Esto incluye permisos sanitarios y fitosanitarios del Ministerio de Salud y Ministerio de Desarrollo Agropecuario, autorizaciones de la Autoridad de Protección al Consumidor, certificados de libre venta, permisos para productos químicos, materiales peligrosos, productos farmacéuticos, cosméticos y cualquier otro producto sujeto a regulación especial.</p>
+
+                        <p>Para cada tipo de producto regulado, gestionamos procesos específicos que pueden incluir registro de productos, análisis de laboratorio por entidades acreditadas, inspecciones previas a embarque, obtención de certificaciones técnicas, cumplimiento de normas panameñas específicas y coordinación con diferentes entidades gubernamentales. Nuestro conocimiento de procedimientos agiliza estos trámites complejos.</p>
+
+                        <h3>Gestión de Declaraciones Aduaneras y Trámites Fiscales</h3>
+                        <p>Preparamos y presentamos declaraciones de importación y exportación ante la Autoridad Nacional de Aduanas de Panamá, incluyendo cálculo exacto de impuestos y aranceles aplicables según clasificación arancelaria, valoración aduanera y régimen especial aplicable. Gestionamos todos los trámites relacionados incluyendo pago de impuestos, solicitud de devoluciones cuando corresponda, y coordinación con autoridades aduaneras para procedimientos especiales.</p>
+
+                        <p>Para operaciones bajo regímenes especiales como zonas francas, depósitos fiscales, perfeccionamiento activo o importación temporal, gestionamos documentación específica requerida incluyendo solicitudes de habilitación, presentación de garantías, declaraciones periódicas y cumplimiento de obligaciones de reporte. Nuestra experiencia incluye manejo de sistemas aduaneros electrónicos y procedimientos específicos de diferentes regímenes.</p>
+
+                        <h3>Documentación para Financiamiento y Cobranza Internacional</h3>
+                        <p>Preparamos conjuntos documentales completos para operaciones de financiamiento internacional incluyendo cartas de crédito (documentary credits), cobranzas documentarias (documentary collections), y otros instrumentos de financiamiento de comercio exterior. Esto incluye verificación de cumplimiento de términos y condiciones de cartas de crédito, preparación de documentos bancarios específicos y coordinación con instituciones financieras para presentación y negociación documentaria.</p>
+
+                        <p>Para operaciones que requieren seguros de crédito de exportación u otros instrumentos de mitigación de riesgo, gestionamos documentación requerida por aseguradoras y entidades de garantía, incluyendo declaraciones de riesgo, informes comerciales, documentación de embarques y certificaciones específicas. Nuestro conocimiento de requisitos de entidades financieras y de seguros garantiza procesamiento eficiente de operaciones.</p>
+
+                        <h3>Gestión de Documentación para Transporte Internacional</h3>
+                        <p>Coordinamos toda la documentación específica para transporte internacional incluyendo documentos de transporte multimodal, certificados de peso y medida, manifiestos de carga, documentación para contenedores refrigerados, certificados para carga peligrosa (IMDG), documentos para carga a granel, y cualquier documentación específica según tipo de transporte y características de mercancías.</p>
+
+                        <p>Para operaciones que involucran múltiples modos de transporte, gestionamos documentación integrada que cumpla con requisitos de cada etapa logística, incluyendo documentos de transición entre modos, certificados de transferencia y documentación para tránsito aduanero internacional. Nuestra coordinación con diferentes proveedores de transporte garantiza consistencia en toda la cadena documental.</p>
+
+                        <h3>Archivo Digital y Gestión Documental Electrónica</h3>
+                        <p>Implementamos sistemas de archivo digital y gestión documental electrónica para comercio exterior que permiten almacenamiento seguro, recuperación rápida y control de versiones de toda documentación relacionada con operaciones internacionales. Esto incluye digitalización de documentos físicos, organización por operación y tipo de documento, y establecimiento de protocolos de retención según requisitos legales y fiscales.</p>
+
+                        <p>Nuestros sistemas proporcionan acceso seguro para clientes a su documentación digitalizada, reportes de estatus documental, alertas sobre vencimientos de certificados o permisos, y herramientas para análisis de documentación histórica para procesos de auditoría o optimización. La gestión documental electrónica mejora eficiencia operativa y reduce riesgos asociados con manejo de documentación física.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Contacto Inmediato</h3>
+                    
+                    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20documentación%20de%20comercio%20exterior%20en%20Panamá" class="whatsapp-btn">
+                        +507 6697-7997
+                    </a>
+
+                    <h3>Documentos Principales</h3>
+                    <ul class="features-list">
+                        <li>Certificados de Origen</li>
+                        <li>Facturas Comerciales</li>
+                        <li>Conocimientos de Embarque</li>
+                        <li>Listas de Empaque</li>
+                        <li>Certificados Sanitarios</li>
+                        <li>Declaraciones Aduaneras</li>
+                        <li>Permisos de Importación</li>
+                        <li>Documentos de Transporte</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section class="main-content" id="documentos" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="content-section">
+                <h2>Documentos Especializados de Comercio Exterior</h2>
+                <p>Gestionamos toda la documentación requerida para operaciones de importación y exportación según requisitos específicos de cada operación.</p>
+            </div>
+
+            <div class="documents-grid">
+                <div class="document-card">
+                    <div class="document-icon">📜</div>
+                    <h4>Certificados de Origen</h4>
+                    <p>Gestión de certificados preferenciales para aprovechamiento de tratados comerciales con diferentes países y bloques económicos.</p>
+                    <div class="document-features">
+                        <strong>Para beneficios arancelarios:</strong>
+                        <div class="feature-details">• Certificados TPA (EE.UU.)<br>• Certificados EUR.1 (UE)<br>• Certificados Canadá<br>• Certificados Chile y otros</div>
+                    </div>
+                </div>
+
+                <div class="document-card">
+                    <div class="document-icon">🧾</div>
+                    <h4>Documentación Comercial</h4>
+                    <p>Preparación de facturas comerciales, listas de empaque y documentos comerciales básicos para operaciones internacionales.</p>
+                    <div class="document-features">
+                        <strong>Para transacciones comerciales:</strong>
+                        <div class="feature-details">• Facturas comerciales internacionales<br>• Listas de empaque detalladas<br>• Certificados de valor<br>• Documentos comerciales complementarios</div>
+                    </div>
+                </div>
+
+                <div class="document-card">
+                    <div class="document-icon">🏛️</div>
+                    <h4>Documentación Aduanera</h4>
+                    <p>Gestión de declaraciones de importación/exportación, permisos aduaneros y trámites ante autoridades aduaneras.</p>
+                    <div class="document-features">
+                        <strong>Para cumplimiento aduanero:</strong>
+                        <div class="feature-details">• Declaraciones aduaneras<br>• Permisos de importación<br>• Documentos para regímenes especiales<br>• Trámites de desaduanamiento</div>
+                    </div>
+                </div>
+
+                <div class="document-card">
+                    <div class="document-icon">🏥</div>
+                    <h4>Certificados Sanitarios</h4>
+                    <p>Obtención de certificados sanitarios, fitosanitarios y de libre venta para productos regulados por autoridades de salud.</p>
+                    <div class="document-features">
+                        <strong>Para productos regulados:</strong>
+                        <div class="feature-details">• Certificados sanitarios Minsa<br>• Certificados fitosanitarios MIDA<br>• Certificados de libre venta<br>• Permisos para productos especiales</div>
+                    </div>
+                </div>
+
+                <div class="document-card">
+                    <div class="document-icon">🚢</div>
+                    <h4>Documentos de Transporte</h4>
+                    <p>Gestión de conocimientos de embarque, guías aéreas, documentos de transporte multimodal y seguros de carga.</p>
+                    <div class="document-features">
+                        <strong>Para logística internacional:</strong>
+                        <div class="feature-details">• Conocimientos de embarque (B/L)<br>• Guías aéreas (AWB)<br>• Documentos de transporte terrestre<br>• Pólizas de seguro internacional</div>
+                    </div>
+                </div>
+
+                <div class="document-card">
+                    <div class="document-icon">💰</div>
+                    <h4>Documentación Financiera</h4>
+                    <p>Preparación de documentación para cartas de crédito, cobranzas documentarias y financiamiento de comercio exterior.</p>
+                    <div class="document-features">
+                        <strong>Para operaciones financieras:</strong>
+                        <div class="feature-details">• Documentos para cartas de crédito<br>• Conjuntos para cobranza documentaria<br>• Certificados para seguros de crédito<br>• Documentación para financiamiento</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 1rem; font-family: 'Times New Roman', serif;">Ventajas de Nuestra Gestión Documentaria</h2>
+            <p style="text-align: center; color: #5a6c7d; margin-bottom: 2rem;">Ofrecemos ventajas competitivas en gestión documentaria para comercio exterior.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">✅</div>
+                    <h4>Exactitud Garantizada</h4>
+                    <p>Procesos de revisión múltiple que garantizan exactitud en toda documentación preparada para operaciones internacionales.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h4>Agilidad en Trámites</h4>
+                    <p>Conocimiento de procedimientos que acelera obtención de certificados, permisos y autorizaciones requeridas.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h4>Reducción de Riesgos</h4>
+                    <p>Prevención de errores documentales que puedan generar demoras, rechazos o sanciones en operaciones internacionales.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📋</div>
+                    <h4>Cumplimiento Normativo</h4>
+                    <p>Conocimiento actualizado de normativas nacionales e internacionales que garantiza cumplimiento exacto de requisitos.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💾</div>
+                    <h4>Archivo Digital</h4>
+                    <p>Sistemas de gestión documental electrónica que facilitan acceso, recuperación y control de documentación histórica.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h4>Soporte Personalizado</h4>
+                    <p>Atención especializada adaptada a necesidades específicas de cada cliente y tipo de operación comercial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 1rem; font-family: 'Times New Roman', serif;">Proceso de Gestión Documentaria</h2>
+            <p style="text-align: center; color: #5a6c7d; margin-bottom: 2rem;">Nuestro enfoque sistemático garantiza eficiencia y exactitud en toda gestión documentaria.</p>
+            
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">1</div>
+                    <h4>Análisis de Requisitos</h4>
+                    <p>Evaluación detallada de requisitos documentales específicos según tipo de operación, productos y países involucrados.</p>
+                    <div class="process-details">
+                        <span>Identificación de documentos requeridos • Análisis de normativas aplicables • Definición de plazos</span>
+                    </div>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">2</div>
+                    <h4>Preparación Documental</h4>
+                    <p>Elaboración y preparación de toda documentación requerida con verificación de exactitud y consistencia de información.</p>
+                    <div class="process-details">
+                        <span>Elaboración de documentos • Verificación de datos • Consistencia entre documentos</span>
+                    </div>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">3</div>
+                    <h4>Gestión de Trámites</h4>
+                    <p>Coordinación de trámites ante autoridades competentes para obtención de certificados, permisos y autorizaciones requeridas.</p>
+                    <div class="process-details">
+                        <span>Presentación ante autoridades • Seguimiento de trámites • Coordinación con entidades</span>
+                    </div>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">4</div>
+                    <h4>Revisión y Validación</h4>
+                    <p>Proceso de revisión múltiple y validación final de toda documentación antes de presentación o envío a destinatarios.</p>
+                    <div class="process-details">
+                        <span>Revisión por especialistas • Validación contra requisitos • Corrección de discrepancias</span>
+                    </div>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">5</div>
+                    <h4>Presentación y Distribución</h4>
+                    <p>Presentación de documentación ante autoridades, entidades financieras o distribución a destinatarios según requerimientos.</p>
+                    <div class="process-details">
+                        <span>Presentación formal • Distribución a destinatarios • Confirmación de recepción</span>
+                    </div>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">6</div>
+                    <h4>Archivo y Seguimiento</h4>
+                    <p>Archivo digital de documentación completa y seguimiento de vencimientos o renovaciones requeridas.</p>
+                    <div class="process-details">
+                        <span>Archivo digital seguro • Seguimiento de vencimientos • Gestión de renovaciones</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <h2>¿Necesita Gestión Especializada de Documentación para Comercio Exterior?</h2>
+            <p>Contacte a nuestros especialistas en documentación comercial internacional para garantizar exactitud, cumplimiento normativo y eficiencia en toda la documentación requerida para sus operaciones de importación y exportación desde Panamá.</p>
+            <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20documentación%20de%20comercio%20exterior%20en%20Panamá" class="btn-primary">Consultar Especialista</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LEGAL LOGÍSTIC INNOVA - DOCUMENTACIÓN DE COMERCIO EXTERIOR PANAMÁ</strong></p>
+            <p>Empresa Especializada en Gestión Documentaria para Comercio Internacional</p>
+            <p>Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9</p>
+            <p>WhatsApp: +507 6697-7997 | Ciudad de Panamá, República de Panamá</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20documentación%20de%20comercio%20exterior%20en%20Panamá" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 52, 96, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 52, 96, 0.96)';
+            }
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

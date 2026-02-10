@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regímenes Especiales Aduaneros Panamá | Legal Logístic Innova</title>
+    <meta name="description" content="Regímenes especiales aduaneros en Panamá con manejo de importaciones temporales, perfeccionamiento activo, tránsito aduanero y operaciones complejas. Legal Logístic Innova, especialistas con más de 10 años.">
+    <meta name="keywords" content="regimenes especiales panama, importacion temporal panama, perfeccionamiento activo panama, transito aduanero panama, operaciones complejas panama">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Regímenes Especiales Aduaneros Panamá",
+        "description": "Servicio especializado en regímenes especiales aduaneros y operaciones complejas de comercio exterior",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Legal Logístic Innova",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9",
+                "addressLocality": "Ciudad de Panamá",
+                "addressRegion": "Panamá",
+                "postalCode": "0801",
+                "addressCountry": "PA"
+            },
+            "telephone": "+50766977997"
+        },
+        "areaServed": ["Ciudad de Panamá", "Colón", "David", "Santiago", "Chitré"],
+        "serviceType": "Regímenes Especiales Aduaneros",
+        "category": "Servicios Aduaneros"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 52, 96, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #1e88e5;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8ecef;
+            margin-top: 90px;
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-list a {
+            color: #1e88e5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: #0f3460;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #0f3460;
+            margin-bottom: 2rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #5a6c7d;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .main-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a6c7d;
+        }
+
+        .main-text p {
+            margin-bottom: 2rem;
+        }
+
+        /* Regimes Grid */
+        .regimes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .regime-card {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .regime-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .regime-icon {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            background: #1e88e5;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .regime-card h4 {
+            font-size: 1.4rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+
+        .regime-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .regime-benefits {
+            background: rgba(30, 136, 229, 0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .regime-benefits strong {
+            color: #0f3460;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-list {
+            color: #5a6c7d;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e8ecef;
+            color: #34495e;
+            font-weight: 500;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.5rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: #1e88e5;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .benefit-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+
+        /* Related Services */
+        .related-services {
+            background: #ffffff;
+            padding: 4rem 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #5a6c7d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .service-link {
+            display: inline-block;
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.3rem;
+        }
+
+        .service-link:hover {
+            color: #0f3460;
+            border-bottom-color: #1e88e5;
+            transform: translateX(5px);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            line-height: 1.8;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .regimes-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" type="image/png" href="LOGO.webp">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LEGAL LOGÍSTIC INNOVA</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="despachante-de-aduana-panama.html">Servicios</a>
+                <a href="#contacto" class="contact-btn">Cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="breadcrumb-container">
+            <div class="breadcrumb-list">
+                <a href="index.html">Inicio</a> &gt; 
+                <a href="despachante-de-aduana-panama.html">Despachante de Aduana Panamá</a> &gt; 
+                <span>Regímenes Especiales Aduaneros Panamá</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Regímenes Especiales Aduaneros Panamá - Temporales y Operaciones Complejas</h1>
+            <p class="subtitle">Especialistas en regímenes especiales aduaneros con manejo experto de importaciones temporales, perfeccionamiento activo, tránsito aduanero, reimportaciones y operaciones complejas que requieren tratamiento especializado.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Solicitar Asesoría</a>
+                <a href="#regimenes" class="btn-primary">Ver Regímenes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-text">
+                    <div class="content-section">
+                        <h2>Servicios Especializados en Regímenes Especiales Aduaneros en Panamá</h2>
+                        <p>En Legal Logístic Innova ofrecemos servicios especializados en regímenes especiales aduaneros que permiten a empresas acceder a beneficios tributarios, optimizar flujos logísticos y realizar operaciones comerciales complejas bajo tratamientos aduaneros preferenciales. Nuestro equipo cuenta con amplia experiencia en el manejo de importaciones temporales, perfeccionamiento activo y pasivo, tránsito aduanero, reimportaciones, operaciones de drawback y regímenes zonales que ofrecen ventajas significativas para operaciones de comercio exterior estratégicamente planificadas.</p>
+
+                        <p>Los regímenes especiales aduaneros representan herramientas fundamentales para la competitividad empresarial, permitiendo suspensión temporal de tributos, tratamientos preferenciales para determinadas operaciones, facilidades logísticas para mercaderías en tránsito y procedimientos simplificados para operaciones recurrentes. Sin embargo, cada régimen tiene requisitos específicos, condiciones de elegibilidad, obligaciones de control y procedimientos que deben cumplirse rigurosamente para mantener los beneficios otorgados y evitar contingencias que puedan resultar en pérdida de beneficios o sanciones por incumplimiento.</p>
+
+                        <h3>Importación Temporal para Perfeccionamiento Activo</h3>
+                        <p>Gestionamos operaciones de importación temporal para perfeccionamiento activo que permiten importar mercaderías con suspensión total o parcial de tributos aduaneros, bajo compromiso de reexportación posterior en un plazo determinado, ya sea en el mismo estado o después de haber sido sometidas a operaciones de perfeccionamiento, transformación, ensamble o reparación. Este régimen es especialmente valioso para empresas manufactureras, ensambladoras y de servicios industriales que requieren insumos o componentes extranjeros para producción destinada a exportación.</p>
+
+                        <p>Nuestro servicio incluye análisis de elegibilidad según tipo de mercadería y operación prevista, preparación de solicitudes de admisión temporal con garantías apropiadas, gestión de prórrogas cuando sean necesarias, control de inventarios bajo régimen temporal, coordinación de inspecciones de cumplimiento y gestión de reexportación final dentro de plazos establecidos. Para operaciones complejas que involucran múltiples transformaciones, establecemos controles específicos que aseguran trazabilidad completa y cumplimiento de condiciones técnicas establecidas por las autoridades aduaneras.</p>
+
+                        <h3>Perfeccionamiento Pasivo y Reimportaciones</h3>
+                        <p>Manejamos operaciones de perfeccionamiento pasivo que permiten exportar temporalmente mercaderías de origen nacional o nacionalizadas para ser sometidas a operaciones de transformación, elaboración o reparación en el extranjero, con posterior reimportación bajo tratamiento arancelario preferencial que grava únicamente el valor agregado durante el procesamiento exterior. Este régimen es particularmente útil para empresas que requieren servicios especializados no disponibles localmente o que buscan optimizar costos de producción mediante procesamiento en jurisdicciones con ventajas comparativas específicas.</p>
+
+                        <p>Nuestros servicios incluyen evaluación de viabilidad técnica y económica, gestión de exportación temporal con documentación especializada, coordinación con procesadores extranjeros para cumplimiento de requisitos técnicos, seguimiento de operaciones de transformación, gestión de reimportación bajo régimen preferencial y liquidación final de tributos aplicables únicamente al valor agregado. Para operaciones recurrentes, desarrollamos protocolos estandarizados que facilitan tramitaciones subsecuentes y optimizan tiempos de procesamiento.</p>
+
+                        <h3>Tránsito Aduanero y Operaciones de Paso</h3>
+                        <p>Gestionamos operaciones de tránsito aduanero que permiten el transporte de mercaderías a través del territorio aduanero panameño con suspensión de tributos, bajo garantía y control aduanero, desde un punto de entrada hasta un punto de salida hacia destino final en otro país. Este régimen facilita el uso de Panamá como hub logístico regional, aprovechando su posición geográfica estratégica y infraestructura portuaria y aeroportuaria de clase mundial para operaciones de consolidación, desconsolidación y redistribución de cargas internacionales.</p>
+
+                        <p>Proporcionamos gestión integral que incluye solicitud de autorización de tránsito con garantías apropiadas, coordinación con transportistas especializados en cargas bajo control aduanero, seguimiento de mercaderías durante el tránsito, gestión de documentación en puntos de entrada y salida, coordinación con autoridades aduaneras de países de origen y destino cuando sea requerido y liquidación final de operaciones de tránsito. Para empresas que utilizan Panamá como centro de distribución regional, establecemos procedimientos estandarizados que agilizan operaciones recurrentes.</p>
+
+                        <h3>Régimen de Admisión Temporal para Ferias y Exposiciones</h3>
+                        <p>Especialistas en gestión de admisión temporal para mercaderías destinadas a ferias comerciales, exposiciones industriales, demostraciones técnicas, eventos promocionales y actividades similares que requieren ingreso temporal de productos, equipos, maquinaria, vehículos o material promocional con exención total de tributos aduaneros bajo compromiso de reexportación dentro de plazos establecidos. Este régimen facilita la participación de empresas extranjeras en eventos comerciales en Panamá y la promoción de productos panameños en mercados internacionales.</p>
+
+                        <p>Nuestros servicios incluyen coordinación previa con organizadores de eventos, preparación de documentación específica para admisión temporal, gestión de garantías requeridas, coordinación logística para ingreso y salida de mercaderías, supervisión durante eventos para cumplimiento de condiciones establecidas y gestión de reexportación final o nacionalización parcial cuando sea autorizada. Para eventos recurrentes como ferias anuales, desarrollamos procedimientos optimizados que simplifican tramitaciones futuras.</p>
+
+                        <h3>Drawback y Devolución de Tributos</h3>
+                        <p>Gestionamos operaciones de drawback que permiten la devolución total o parcial de tributos aduaneros pagados por mercaderías importadas que posteriormente son exportadas, ya sea en el mismo estado, después de haber sido sometidas a procesos de transformación o como componentes de productos manufacturados localmente. Este régimen incentiva las exportaciones y mejora la competitividad de productos panameños en mercados internacionales al eliminar la carga tributaria de insumos importados incorporados en productos de exportación.</p>
+
+                        <p>Proporcionamos análisis de elegibilidad según tipo de mercadería y proceso productivo, preparación de solicitudes de devolución con documentación soporte completa, seguimiento de proceso de evaluación ante autoridades competentes, gestión de verificaciones técnicas cuando sean requeridas y seguimiento hasta obtención de devolución autorizada. Para empresas exportadoras con operaciones recurrentes, establecemos controles internos que faciliten futuras solicitudes de drawback y optimicen el aprovechamiento de este beneficio fiscal.</p>
+
+                        <h3>Operaciones en Zonas Francas y Regímenes Zonales</h3>
+                        <p>Brindamos servicios especializados para operaciones bajo regímenes zonales que ofrecen beneficios tributarios y procedimientos simplificados para empresas establecidas en zonas francas o que realizan operaciones bajo regímenes especiales territoriales. Esto incluye gestión de ingresos y salidas de zonas francas, operaciones de transformación bajo régimen zonal, reembarques hacia terceros países, operaciones de consolidación y desconsolidación bajo tratamiento preferencial y aprovechamiento de beneficios fiscales disponibles para operaciones zonales calificadas.</p>
+
+                        <p>Coordinamos directamente con administradores de zonas francas para cumplimiento de regulaciones específicas, gestión de inventarios bajo régimen zonal, preparación de reportes de control requeridos por autoridades, optimización de flujos logísticos dentro de zonas francas y gestión de salidas hacia territorio aduanero nacional o reembarques hacia destinos internacionales. Para empresas con operaciones complejas que combinan actividades zonales y territoriales, desarrollamos estructuras operativas que maximizan beneficios disponibles bajo cada régimen.</p>
+
+                        <h3>Asesoramiento Estratégico y Optimización de Regímenes</h3>
+                        <p>Proporcionamos asesoramiento estratégico para selección óptima de regímenes especiales según objetivos comerciales específicos, análisis de viabilidad técnica y económica de diferentes opciones, evaluación de beneficios fiscales disponibles, identificación de requisitos de cumplimiento y desarrollo de estructuras operativas que maximicen ventajas competitivas disponibles bajo cada régimen. Este asesoramiento incluye análisis de cadenas de valor, optimización de flujos logísticos y diseño de operaciones que aprovechen sinergias entre diferentes regímenes especiales.</p>
+
+                        <p>Para empresas multinacionales con operaciones complejas, desarrollamos estrategias integrales que combinan múltiples regímenes especiales, coordinan operaciones entre diferentes jurisdicciones y optimizan estructura fiscal global considerando beneficios disponibles en Panamá y tratados internacionales aplicables. Esto incluye análisis de precios de transferencia aplicables a operaciones bajo regímenes especiales, evaluación de impacto en estructura tributaria consolidada y recomendaciones para optimización de operaciones regionales utilizando Panamá como centro estratégico.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Contacto Inmediato</h3>
+                    
+                    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20regímenes%20especiales%20aduaneros%20en%20Panamá" class="whatsapp-btn">
+                        +507 6697-7997
+                    </a>
+
+                    <h3>Tipos de Regímenes</h3>
+                    <ul class="features-list">
+                        <li>Importación Temporal</li>
+                        <li>Perfeccionamiento Activo</li>
+                        <li>Perfeccionamiento Pasivo</li>
+                        <li>Tránsito Aduanero</li>
+                        <li>Admisión Temporal</li>
+                        <li>Drawback</li>
+                        <li>Reimportación</li>
+                        <li>Regímenes Zonales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regimes Section -->
+    <section class="main-content" id="regimenes" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="content-section">
+                <h2>Principales Regímenes Especiales Disponibles</h2>
+                <p>Cada régimen especial ofrece beneficios específicos diseñados para diferentes tipos de operaciones comerciales.</p>
+            </div>
+
+            <div class="regimes-grid">
+                <div class="regime-card">
+                    <div class="regime-icon">🔄</div>
+                    <h4>Importación Temporal</h4>
+                    <p>Suspensión de tributos para mercaderías destinadas a reexportación, transformación o uso temporal específico.</p>
+                    <div class="regime-benefits">
+                        <strong>Beneficios principales:</strong>
+                        <div class="benefit-list">• Suspensión total tributos<br>• Plazos flexibles hasta 2 años<br>• Garantías ajustadas al riesgo<br>• Renovaciones posibles</div>
+                    </div>
+                </div>
+
+                <div class="regime-card">
+                    <div class="regime-icon">⚙️</div>
+                    <h4>Perfeccionamiento Activo</h4>
+                    <p>Importación temporal para transformación, ensamble o reparación con posterior reexportación del producto resultante.</p>
+                    <div class="regime-benefits">
+                        <strong>Ventajas operativas:</strong>
+                        <div class="benefit-list">• Acceso a insumos sin tributos<br>• Mejora competitividad exportaciones<br>• Flexibilidad en transformaciones<br>• Control inventarios especializados</div>
+                    </div>
+                </div>
+
+                <div class="regime-card">
+                    <div class="regime-icon">🏭</div>
+                    <h4>Perfeccionamiento Pasivo</h4>
+                    <p>Exportación temporal para procesamiento exterior con reimportación bajo tributación únicamente del valor agregado.</p>
+                    <div class="regime-benefits">
+                        <strong>Optimizaciones disponibles:</strong>
+                        <div class="benefit-list">• Acceso servicios especializados<br>• Reducción costos procesamiento<br>• Tributación solo valor agregado<br>• Aprovechamiento ventajas externas</div>
+                    </div>
+                </div>
+
+                <div class="regime-card">
+                    <div class="regime-icon">🚛</div>
+                    <h4>Tránsito Aduanero</h4>
+                    <p>Transporte de mercaderías através del territorio con suspensión de tributos desde entrada hasta salida.</p>
+                    <div class="regime-benefits">
+                        <strong>Facilidades logísticas:</strong>
+                        <div class="benefit-list">• Hub logístico regional<br>• Infraestructura de clase mundial<br>• Procedimientos simplificados<br>• Conexiones internacionales</div>
+                    </div>
+                </div>
+
+                <div class="regime-card">
+                    <div class="regime-icon">🎪</div>
+                    <h4>Admisión Temporal</h4>
+                    <p>Ingreso temporal para ferias, exposiciones, demostraciones y eventos promocionales con exención total.</p>
+                    <div class="regime-benefits">
+                        <strong>Aplicaciones eventos:</strong>
+                        <div class="benefit-list">• Ferias comerciales<br>• Exposiciones industriales<br>• Demostraciones técnicas<br>• Material promocional</div>
+                    </div>
+                </div>
+
+                <div class="regime-card">
+                    <div class="regime-icon">💰</div>
+                    <h4>Drawback</h4>
+                    <p>Devolución de tributos pagados por insumos importados incorporados en productos posteriormente exportados.</p>
+                    <div class="regime-benefits">
+                        <strong>Incentivos exportación:</strong>
+                        <div class="benefit-list">• Devolución tributos pagados<br>• Mejora competitividad<br>• Apoyo exportaciones<br>• Reducción carga tributaria</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 1rem; font-family: 'Times New Roman', serif;">Beneficios de los Regímenes Especiales</h2>
+            <p style="text-align: center; color: #5a6c7d; margin-bottom: 2rem;">Los regímenes especiales ofrecen ventajas competitivas significativas para operaciones estratégicas.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏦</div>
+                    <h4>Suspensión Tributaria</h4>
+                    <p>Eliminación temporal o definitiva de carga tributaria para operaciones calificadas.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h4>Competitividad</h4>
+                    <p>Mejora significativa en competitividad de productos y servicios en mercados internacionales.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h4>Flexibilidad Operativa</h4>
+                    <p>Procedimientos simplificados y flexibilidad en operaciones comerciales complejas.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌎</div>
+                    <h4>Hub Regional</h4>
+                    <p>Aprovechamiento de Panamá como centro estratégico para operaciones regionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <h2>¿Listo para Optimizar sus Operaciones con Regímenes Especiales?</h2>
+            <p>Contacte a nuestros especialistas y descubra cómo los regímenes especiales pueden transformar su competitividad y optimizar sus operaciones de comercio exterior.</p>
+            <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20regímenes%20especiales%20aduaneros%20en%20Panamá" class="btn-primary">Contactar Especialista</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LEGAL LOGÍSTIC INNOVA - REGÍMENES ESPECIALES ADUANEROS PANAMÁ</strong></p>
+            <p>Especialistas en Operaciones Complejas y Regímenes Preferenciales</p>
+            <p>Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9</p>
+            <p>WhatsApp: +507 6697-7997 | Ciudad de Panamá, República de Panamá</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20regímenes%20especiales%20aduaneros%20en%20Panamá" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 52, 96, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 52, 96, 0.96)';
+            }
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

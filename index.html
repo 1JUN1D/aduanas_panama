@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina de Aduana Panamá | Legal Logístic Innova - Despachante de Aduana y Logística</title>
+    <meta name="description" content="Oficina de aduana en Panamá especializada en despacho aduanero, servicios de logística integral y comercio exterior. Legal Logístic Innova con más de 10 años de experiencia.">
+    <meta name="keywords" content="oficina aduana panama, despachante aduana panama, logistica panama, importacion exportacion panama, agente aduanas panama">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="LOGO.png">
+    
+    <!-- Schema Markup de Negocio Local -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "LEGAL LOGÍSTIC INNOVA - OFICINA DE ADUANA PANAMÁ",
+        "description": "Empresa especializada en servicios aduaneros, logística integral y comercio exterior en Panamá",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Avenida Balboa, Torre Ocean Business Plaza",
+            "addressLocality": "Ciudad de Panamá",
+            "addressRegion": "Panamá",
+            "postalCode": "0801",
+            "addressCountry": "PA"
+        },
+        "telephone": "+50766977997",
+        "url": "https://www.legallogisticinnova.com",
+        "areaServed": ["Ciudad de Panamá", "Colón", "David", "Santiago", "Chitré"],
+        "hasCredential": "Agente de Aduanas Autorizado",
+        "serviceType": ["Servicios Aduaneros", "Logística", "Comercio Exterior"],
+        "priceRange": "$$"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 52, 96, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo-img {
+            height: 50px;
+            width: auto;
+            transition: all 0.3s ease;
+        }
+        
+        .logo-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 2rem;
+            margin-top: 90px;
+            overflow: hidden;
+        }
+
+        /* OVERLAY SUPERIOR */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(15, 51, 96, 0.688), rgba(21, 101, 192, 0.578));
+            z-index: -1;
+        }
+
+        /* RAYO RADIAL SUAVE */
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, transparent 0%, rgba(15, 52, 96, 0.4) 100%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 2;
+        }
+
+        .hero-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-logo {
+            height: 80px;
+            width: auto;
+            filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.3));
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+            font-family: 'Times New Roman', serif;
+            line-height: 1.1;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            opacity: 0.95;
+            line-height: 1.6;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 18px 36px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            padding: 18px 36px;
+            border: 2px solid rgba(255,255,255,0.8);
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Services Sections */
+        .services {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .services:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .services:nth-child(odd) {
+            background-color: #f8f9fa;
+        }
+
+        .service-category {
+            margin-bottom: 4rem;
+        }
+
+        .category-content {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .category-text {
+            flex: 1;
+        }
+
+        .category-text h2 {
+            font-size: 2.8rem;
+            color: #0f3460;
+            margin-bottom: 2rem;
+            font-family: 'Times New Roman', serif;
+            line-height: 1.2;
+            font-weight: 400;
+        }
+
+        .category-text p {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            color: #5a6c7d;
+            line-height: 1.8;
+        }
+
+        .service-highlights {
+            list-style: none;
+            margin-bottom: 2.5rem;
+        }
+
+        .service-highlights li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e8ecef;
+            color: #34495e;
+            font-weight: 500;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .service-highlights li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .service-link {
+            display: inline-block;
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.3rem;
+        }
+
+        .service-link:hover {
+            color: #0f3460;
+            border-bottom-color: #1e88e5;
+            transform: translateX(5px);
+        }
+
+        .category-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .service-img {
+            width: 100%;
+            max-width: 500px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .service-img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+        }
+
+        /* Areas Section */
+        .areas {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 6rem 0;
+        }
+
+        .areas h3 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+        }
+
+        .areas-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 4rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .areas-content {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .areas-image {
+            flex: 1;
+        }
+
+        .areas-img {
+            width: 100%;
+            max-width: 500px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .areas-text {
+            flex: 1;
+        }
+
+        .areas-text h4 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .areas-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+
+        .areas-list {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .area-item {
+            background: rgba(255,255,255,0.15);
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .area-item:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-2px);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            padding: 6rem 0;
+            text-align: center;
+            color: white;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+            background: rgba(255,255,255,0.95);
+            color: #2c3e50;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #7f8c8d;
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+            margin-bottom: 2rem;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: white;
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        /* Map Section */
+        .map-section {
+            background: #ffffff;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .map-section h3 {
+            font-size: 3rem;
+            color: #0f3460;
+            margin-bottom: 3rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+        }
+
+        .map-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 4rem 0 3rem;
+        }
+
+        .footer-logo {
+            height: 80px;
+            width: auto;
+            margin-bottom: 2rem;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            line-height: 1.8;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero-logo {
+                height: 60px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .category-content {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .areas-content {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .form-group {
+                flex-direction: column;
+            }
+
+            .areas-list {
+                gap: 0.5rem;
+            }
+
+            .area-item {
+                padding: 0.8rem 1.5rem;
+            }
+
+            .category-text h2 {
+                font-size: 2.2rem;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo-img {
+                height: 40px;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+            }
+
+            .contact-btn {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+
+            .footer-logo {
+                height: 60px;
+            }
+        }
+
+        /* VIDEO DE FONDO */
+        .hero video.bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+    </style>
+
+    <link rel="shortcut icon" type="image/png" href="LOGO.webp">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="LOGO.png" alt="Legal Logistic Innova Logo" class="logo-img">
+                <div class="logo">LEGAL LOGÍSTIC INNOVA</div>
+            </div>
+            <a href="#contacto" class="contact-btn">Consulta Gratuita</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Video de fondo -->
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('video.mp4'); background-size: cover; background-position: center; z-index: -2;"></div>
+        
+        <div class="hero-content">
+            <div class="hero-title-container">
+                <img src="LOGO.png" alt="Legal Logistic Innova Logo" class="hero-logo">
+                <h1>Oficina de Aduana Panamá - Servicios Integrales de Despacho y Logística</h1>
+            </div>
+            <p class="subtitle">Expertos en servicios aduaneros, logística integral y comercio exterior en Panamá. Más de 10 años facilitando operaciones de importación y exportación con excelencia y profesionalismo.</p>
+            
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Solicitar Cotización</a>
+                <a href="#servicios" class="btn-secondary">Nuestros Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section - Despachante de Aduana -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="service-category">
+                <div class="category-content">
+                    <div class="category-text">
+                        <h2>Despachante de Aduana Panamá</h2>
+                        <p>Especialistas en gestión integral de operaciones aduaneras con clasificación arancelaria, valoración aduanera, gestión de permisos con órganos anuentes y manejo de regímenes especiales. Optimizamos costos y prevenimos contingencias en cada proceso aduanero.</p>
+                        <ul class="service-highlights">
+                            <li>Despacho de Importación y Exportación</li>
+                            <li>Clasificación Arancelaria Especializada</li>
+                            <li>Valoración Aduanera Certificada</li>
+                            <li>Gestión de Permisos y Órganos Anuentes</li>
+                            <li>Regímenes Especiales y Operaciones Complejas</li>
+                        </ul>
+                        <a href="despachante-de-aduana-panama.html" class="service-link">Conocer más →</a>
+                    </div>
+                    <div class="category-image">
+                        <img src="aduanas1.jpg" alt="Despachante de Aduana en Panamá - Gestión aduanera integral" class="service-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section - Logística -->
+    <section class="services">
+        <div class="container">
+            <div class="service-category">
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="aduanas2.jpg" alt="Servicios de Logística en Panamá - Transporte y distribución" class="service-img">
+                    </div>
+                    <div class="category-text">
+                        <h2>Servicio de Logística Panamá</h2>
+                        <p>Soluciones logísticas integrales que incluyen transporte de carga, almacenamiento especializado, distribución nacional, optimización de cadenas de suministro y consultoría logística. Conectamos su negocio con eficiencia y seguridad.</p>
+                        <ul class="service-highlights">
+                            <li>Logística de Importación y Exportación</li>
+                            <li>Transporte de Carga Especializado</li>
+                            <li>Almacenamiento de Mercaderías</li>
+                            <li>Distribución y Cadena de Suministro</li>
+                            <li>Optimización Logística y Consultoría</li>
+                        </ul>
+                        <a href="servicio-logistica-panama.html" class="service-link">Conocer más →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section - Importación y Exportación -->
+    <section class="services">
+        <div class="container">
+            <div class="service-category">
+                <div class="category-content">
+                    <div class="category-text">
+                        <h2>Empresa de Importación y Exportación Panamá</h2>
+                        <p>Especialistas en comercio exterior con servicios completos de importación, exportación, documentación internacional, Incoterms, certificaciones de origen, cartas de crédito y análisis previo de operaciones para maximizar el éxito comercial.</p>
+                        <ul class="service-highlights">
+                            <li>Importación y Exportación de Mercaderías</li>
+                            <li>Documentación de Comercio Exterior</li>
+                            <li>Incoterms y Negociación Internacional</li>
+                            <li>Certificaciones de Origen</li>
+                            <li>Análisis Previo y Courier Internacional</li>
+                        </ul>
+                        <a href="empresa-importacion-exportacion-panama.html" class="service-link">Conocer más →</a>
+                    </div>
+                    <div class="category-image">
+                        <img src="aduanas3.jpg" alt="Empresa de Importación y Exportación en Panamá - Comercio exterior" class="service-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Firma de Abogados Section -->
+    <section class="services">
+        <div class="container">
+            <div class="service-category">
+                <div class="category-content">
+                    <div class="category-text">
+                        <p style="font-size: 2.8rem; color: #0f3460; margin-bottom: 2rem; font-family: 'Times New Roman', serif; line-height: 1.2; font-weight: 400;">Firma de Abogados en Panamá - Legal Logistic Innova</p>
+                        <p style="font-size: 1.1rem; margin-bottom: 2.5rem; color: #5a6c7d; line-height: 1.8;">En Legal Logistic Innova contamos con un equipo de abogados especializados en derecho aduanero, comercio internacional y logística. Brindamos asesoría legal integral para empresas que realizan operaciones de importación y exportación, garantizando el cumplimiento normativo y la protección de sus intereses comerciales en cada transacción.</p>
+                        <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20servicios%20legales%20en%20comercio%20exterior%20con%20Legal%20Logistic%20Innova" target="_blank" class="btn-primary" style="display: inline-block;">Consultar con Abogados</a>
+                    </div>
+                    <div class="category-image">
+                        <img src="aduanas1.jpg" alt="Firma de Abogados Legal Logistic Innova en Panamá" class="service-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Asesoría Legal Section -->
+    <section class="services">
+        <div class="container">
+            <div class="service-category">
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="aduanas2.jpg" alt="Asesoría Legal Legal Logistic Innova en Panamá" class="service-img">
+                    </div>
+                    <div class="category-text">
+                        <p style="font-size: 2.8rem; color: #0f3460; margin-bottom: 2rem; font-family: 'Times New Roman', serif; line-height: 1.2; font-weight: 400;">Asesoría Legal - Legal Logistic Innova</p>
+                        <p style="font-size: 1.1rem; margin-bottom: 2.5rem; color: #5a6c7d; line-height: 1.8;">Ofrecemos asesoría legal especializada en derecho aduanero, tributario internacional, contratos de comercio exterior, resolución de controversias aduaneras y defensa ante la Autoridad Nacional de Aduanas. Nuestro equipo legal trabaja en conjunto con nuestros especialistas en logística para ofrecer soluciones integrales que protejan y optimicen sus operaciones comerciales internacionales.</p>
+                        <a href="https://wa.me/50766977997?text=Hola,%20necesito%20asesoría%20legal%20con%20Legal%20Logistic%20Innova" target="_blank" class="btn-primary" style="display: inline-block;">Solicitar Asesoría Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Section -->
+    <section class="areas">
+        <div class="container">
+            <h3>Áreas de Cobertura</h3>
+            <p class="areas-subtitle">Brindamos servicios especializados en logística y operaciones aduaneras en toda la República de Panamá</p>
+            
+            <div class="areas-content">
+                <div class="areas-image">
+                    <img src="area-cobertura.jpg" alt="Panamá - Servicios de logística y aduanas" class="areas-img">
+                </div>
+                <div class="areas-text">
+                    <h4>República de Panamá</h4>
+                    <p>Nuestro equipo de especialistas en comercio exterior y logística ofrece servicios integrales en las principales ciudades y puertos de Panamá. Con más de 10 años de experiencia, hemos construido una sólida reputación atendiendo empresas importadoras y exportadoras en todo el territorio nacional.</p>
+                    <p>Conocemos profundamente los procedimientos aduaneros locales y mantenemos excelentes relaciones con la Autoridad Nacional de Aduanas, puertos, aeropuertos y entidades regulatorias en cada una de las ciudades donde operamos.</p>
+                </div>
+            </div>
+            
+            <div class="areas-list">
+                <div class="area-item">Ciudad de Panamá</div>
+                <div class="area-item">Colón</div>
+                <div class="area-item">David</div>
+                <div class="area-item">Santiago</div>
+                <div class="area-item">Chitré</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h3 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">Consulta Gratuita</h3>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Contáctanos para una evaluación inicial de sus operaciones sin costo<br>Respondemos en un máximo de 24 horas</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="empresa" placeholder="Empresa" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="tel" name="telefono" placeholder="Teléfono" required>
+                </div>
+                <textarea name="mensaje" placeholder="Describe tus necesidades de logística o servicios aduaneros..." required></textarea>
+                <button type="submit" class="submit-btn">Enviar Consulta</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h3>Nuestra Ubicación</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.660114783306!2d-79.5326089!3d9.0033887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca97885112739%3A0x1286d01e1f03b260!2sLOGISTICA%20Y%20AGENTE%20DE%20ADUANAS%20PANAMA%20-%20LEGAL%20LOG%C3%8DSTIC%20INNOVA!5e0!3m2!1ses-419!2sco!4v1770682661067!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img src="LOGO.png" alt="Legal Logistic Innova Logo" class="footer-logo">
+            <p><strong>LEGAL LOGÍSTIC INNOVA - OFICINA DE ADUANA PANAMÁ</strong></p>
+            <p>Especialistas en Servicios Aduaneros, Logística Integral y Comercio Exterior</p>
+            <p>WhatsApp: +507 6697 7997 | Ciudad de Panamá, República de Panamá</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20servicios%20aduaneros%20y%20logística%20en%20Panamá" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Formulario de contacto
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const nombre = formData.get('nombre');
+            const empresa = formData.get('empresa');
+            const email = formData.get('email');
+            const telefono = formData.get('telefono');
+            const mensaje = formData.get('mensaje');
+            
+            const whatsappMessage = `Hola, soy ${nombre} de ${empresa}.%0A%0AEmail: ${email}%0ATeléfono: ${telefono}%0A%0AMensaje:%0A${mensaje}%0A%0AGracias.`;
+            
+            window.open(`https://wa.me/50766977997?text=${whatsappMessage}`, '_blank');
+        });
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 52, 96, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 52, 96, 0.96)';
+            }
+        });
+    </script>
+</body>
+</html>

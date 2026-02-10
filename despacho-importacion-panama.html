@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despacho de Importación Panamá | Legal Logístic Innova</title>
+    <meta name="description" content="Despacho de importación en Panamá con gestión integral de mercaderías, tramitación aduanera, permisos y documentación. Legal Logístic Innova, agentes especializados con más de 10 años de experiencia.">
+    <meta name="keywords" content="despacho importacion panama, importacion mercaderias panama, tramites importacion panama, aduana importacion panama, agente importacion panama">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Despacho de Importación Panamá",
+        "description": "Servicio especializado de despacho de importación con gestión integral de mercaderías en Panamá",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Legal Logístic Innova",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9",
+                "addressLocality": "Ciudad de Panamá",
+                "addressRegion": "Panamá",
+                "postalCode": "0801",
+                "addressCountry": "PA"
+            },
+            "telephone": "+50766977997"
+        },
+        "areaServed": ["Ciudad de Panamá", "Colón", "David", "Santiago", "Chitré"],
+        "serviceType": "Despacho de Importación",
+        "category": "Servicios Aduaneros"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 52, 96, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #1e88e5;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8ecef;
+            margin-top: 90px;
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-list a {
+            color: #1e88e5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: #0f3460;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #0f3460;
+            margin-bottom: 2rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #5a6c7d;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .main-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a6c7d;
+        }
+
+        .main-text p {
+            margin-bottom: 2rem;
+        }
+
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .process-step {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #1e88e5;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .process-step h4 {
+            font-size: 1.4rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        .process-step p {
+            color: #5a6c7d;
+            line-height: 1.6;
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e8ecef;
+            color: #34495e;
+            font-weight: 500;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.5rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            background: #ffffff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: #e3f2fd;
+        }
+
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            color: #1e88e5;
+            font-weight: bold;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+        }
+
+        /* Related Services */
+        .related-services {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #5a6c7d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .service-link {
+            display: inline-block;
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.3rem;
+        }
+
+        .service-link:hover {
+            color: #0f3460;
+            border-bottom-color: #1e88e5;
+            transform: translateX(5px);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            line-height: 1.8;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" type="image/png" href="LOGO.webp">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LEGAL LOGÍSTIC INNOVA</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="despachante-de-aduana-panama.html">Servicios</a>
+                <a href="#contacto" class="contact-btn">Cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="breadcrumb-container">
+            <div class="breadcrumb-list">
+                <a href="index.html">Inicio</a> &gt; 
+                <a href="despachante-de-aduana-panama.html">Despachante de Aduana Panamá</a> &gt; 
+                <span>Despacho de Importación Panamá</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Despacho de Importación Panamá - Gestión Integral de Mercaderías</h1>
+            <p class="subtitle">Especialistas en despacho de importación con gestión completa de documentación, permisos, clasificación arancelaria y coordinación con organismos reguladores para importaciones eficientes y sin contratiempos.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Solicitar Despacho</a>
+                <a href="#proceso" class="btn-primary">Ver Proceso</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-text">
+                    <div class="content-section">
+                        <h2>Servicios Especializados de Despacho de Importación en Panamá</h2>
+                        <p>En Legal Logístic Innova ofrecemos servicios integrales de despacho de importación que simplifican y optimizan el proceso de ingreso de mercaderías a territorio panameño. Nuestro equipo de especialistas en comercio exterior cuenta con la experiencia necesaria para manejar importaciones de cualquier complejidad, desde productos de consumo general hasta mercaderías especializadas que requieren permisos específicos de organismos reguladores.</p>
+
+                        <p>Como agentes despachantes autorizados por la Autoridad Nacional de Aduanas (ANA), garantizamos el cumplimiento estricto de todas las normativas aduaneras vigentes, minimizando riesgos de demoras, observaciones o sanciones que puedan afectar la operatividad de su negocio. Nuestro enfoque preventivo nos permite identificar y resolver potenciales inconvenientes antes de que se conviertan en problemas costosos para nuestros clientes.</p>
+
+                        <h3>Gestión Documental Especializada</h3>
+                        <p>La correcta gestión documental es fundamental para un despacho de importación exitoso. Nuestro equipo realiza una revisión exhaustiva de toda la documentación requerida antes del arribo de la mercadería, verificando facturas comerciales, documentos de transporte, certificados de origen, pólizas de seguro y cualquier documentación específica según el tipo de producto a importar.</p>
+
+                        <p>Coordinamos directamente con transitarios, navieras, aerolíneas y transportistas para garantizar que toda la documentación esté completa y correctamente presentada ante las autoridades aduaneras. Esta gestión anticipada nos permite detectar inconsistencias o faltantes documentales con tiempo suficiente para su corrección, evitando demoras innecesarias en el proceso de despacho.</p>
+
+                        <h3>Clasificación Arancelaria y Valoración Aduanera</h3>
+                        <p>Realizamos análisis técnico especializado para la correcta clasificación arancelaria de las mercaderías según el Sistema Armonizado de Designación y Codificación de Mercaderías. Esta clasificación precisa es crucial para determinar los tributos aduaneros aplicables y garantizar el cumplimiento de regulaciones específicas según el tipo de producto.</p>
+
+                        <p>En materia de valoración aduanera, aplicamos estrictamente los métodos establecidos por la Organización Mundial de Comercio (OMC) y la normativa local, asegurando que el valor declarado refleje fielmente el valor de transacción de las mercaderías importadas. Esto previene observaciones por parte de las autoridades y garantiza liquidaciones tributarias correctas.</p>
+
+                        <h3>Coordinación con Organismos Anuentes</h3>
+                        <p>Para mercaderías que requieren permisos especiales, coordinamos integralmente con los organismos anuentes correspondientes. Esto incluye el Ministerio de Salud (MINSA) para productos alimenticios, farmacéuticos y cosméticos; el Ministerio de Desarrollo Agropecuario (MIDA) para productos agrícolas y pecuarios; la Autoridad de los Servicios Públicos (ASEP) para equipos de telecomunicaciones; y otras entidades según la naturaleza específica de cada importación.</p>
+
+                        <p>Nuestro conocimiento profundo de los procedimientos de cada organismo nos permite agilizar la obtención de permisos y autorizaciones, reduciendo significativamente los tiempos de tramitación. Mantenemos comunicación constante con nuestros clientes sobre el estatus de cada gestión, proporcionando transparencia total en todo el proceso.</p>
+
+                        <h3>Manejo de Regímenes Especiales de Importación</h3>
+                        <p>Contamos con amplia experiencia en el manejo de regímenes especiales de importación, incluyendo importaciones temporales para ferias, exposiciones, reparación o perfeccionamiento; admisión temporal para perfeccionamiento activo; reimportaciones; y operaciones bajo el régimen de drawback. Cada uno de estos regímenes tiene requisitos específicos que manejamos con precisión para maximizar los beneficios tributarios disponibles.</p>
+
+                        <p>Para empresas ubicadas en zonas francas o que requieren ingresos a estas zonas especiales, proporcionamos servicios especializados que incluyen la coordinación con administradores zonales y el cumplimiento de regulaciones específicas aplicables a estas operaciones comerciales privilegiadas.</p>
+
+                        <h3>Tecnología y Seguimiento en Tiempo Real</h3>
+                        <p>Utilizamos sistemas tecnológicos avanzados que permiten el seguimiento en tiempo real de cada operación de importación. Nuestros clientes tienen acceso a una plataforma donde pueden consultar el estado actualizado de sus despachos, tiempos estimados de liberación y cualquier requerimiento adicional que pueda surgir durante el proceso aduanero.</p>
+
+                        <p>La integración tecnológica nos permite optimizar tiempos de respuesta, mantener trazabilidad completa de cada operación y generar reportes estadísticos que ayudan a nuestros clientes en la planificación de futuras importaciones. Esta información es valiosa para la optimización de inventarios, programación de entregas y toma de decisiones estratégicas de abastecimiento.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Contacto Inmediato</h3>
+                    
+                    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20despacho%20de%20importación%20en%20Panamá" class="whatsapp-btn">
+                        +507 6697-7997
+                    </a>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Ubicación:</strong><br>
+                                Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">🕒</span>
+                            <div>
+                                <strong>Horarios:</strong><br>
+                                Lun-Vie: 8:00 AM - 6:00 PM<br>
+                                Sáb: 8:00 AM - 12:00 PM
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">⚡</span>
+                            <div>
+                                <strong>Respuesta:</strong><br>
+                                Máximo 2 horas en horario laboral
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Tipos de Importación</h3>
+                    <ul class="features-list">
+                        <li>Importación Definitiva</li>
+                        <li>Importación Temporal</li>
+                        <li>Reimportación</li>
+                        <li>Perfeccionamiento Activo</li>
+                        <li>Equipaje de Viajeros</li>
+                        <li>Muestras Sin Valor</li>
+                        <li>Courier Internacional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="main-content" id="proceso" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="content-section">
+                <h2>Proceso de Despacho de Importación</h2>
+                <p>Nuestro proceso estructurado garantiza despachos eficientes y cumplimiento normativo total en cada importación.</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Análisis Previo</h4>
+                    <p>Revisión exhaustiva de documentación, verificación de requisitos específicos y análisis de clasificación arancelaria antes del arribo de mercaderías.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Gestión de Permisos</h4>
+                    <p>Tramitación integral de permisos ante organismos anuentes, certificaciones requeridas y autorizaciones especiales según tipo de mercadería.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Declaración Aduanera</h4>
+                    <p>Preparación y presentación de declaración aduanera con clasificación correcta, valoración precisa y documentación soporte completa.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Inspección y Aforo</h4>
+                    <p>Coordinación de inspecciones aduaneras, acompañamiento en procesos de aforo físico y gestión de cualquier observación que pueda surgir.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h4>Liquidación Tributaria</h4>
+                    <p>Cálculo preciso de tributos aduaneros, gestión de pagos ante autoridades competentes y obtención de documentos de cancelación.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h4>Liberación Final</h4>
+                    <p>Obtención de autorizaciones de retiro, coordinación logística para entrega y seguimiento hasta ubicación final de mercaderías.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <h2>¿Necesita Despachar una Importación?</h2>
+            <p>Contacte a nuestros especialistas y reciba asesoramiento personalizado para su próxima importación. Garantizamos eficiencia, cumplimiento y transparencia en todo el proceso.</p>
+            <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20despacho%20de%20importación%20en%20Panamá" class="btn-primary">Contactar Especialista</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LEGAL LOGÍSTIC INNOVA - DESPACHO DE IMPORTACIÓN PANAMÁ</strong></p>
+            <p>Especialistas en Gestión Aduanera Integral y Comercio Exterior</p>
+            <p>Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9</p>
+            <p>WhatsApp: +507 6697-7997 | Ciudad de Panamá, República de Panamá</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20despacho%20de%20importación%20en%20Panamá" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 52, 96, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 52, 96, 0.96)';
+            }
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

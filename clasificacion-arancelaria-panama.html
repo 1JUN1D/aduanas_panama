@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación Arancelaria Panamá | Legal Logístic Innova</title>
+    <meta name="description" content="Clasificación arancelaria en Panamá con análisis técnico especializado para correcta determinación arancelaria y tributaria. Legal Logístic Innova, expertos en Sistema Armonizado con más de 10 años.">
+    <meta name="keywords" content="clasificacion arancelaria panama, sistema armonizado panama, codigo arancelario panama, tributos aduaneros panama, nomenclatura arancelaria panama">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Clasificación Arancelaria Panamá",
+        "description": "Servicio especializado de clasificación arancelaria con análisis técnico para correcta determinación tributaria",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Legal Logístic Innova",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9",
+                "addressLocality": "Ciudad de Panamá",
+                "addressRegion": "Panamá",
+                "postalCode": "0801",
+                "addressCountry": "PA"
+            },
+            "telephone": "+50766977997"
+        },
+        "areaServed": ["Ciudad de Panamá", "Colón", "David", "Santiago", "Chitré"],
+        "serviceType": "Clasificación Arancelaria",
+        "category": "Servicios Aduaneros"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 52, 96, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #1e88e5;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8ecef;
+            margin-top: 90px;
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-list a {
+            color: #1e88e5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: #0f3460;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #0f3460;
+            margin-bottom: 2rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #5a6c7d;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .main-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a6c7d;
+        }
+
+        .main-text p {
+            margin-bottom: 2rem;
+        }
+
+        /* Classification Examples */
+        .classification-examples {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            margin: 2rem 0;
+        }
+
+        .classification-examples h4 {
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .example-list {
+            list-style: none;
+            margin: 0;
+        }
+
+        .example-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #dee2e6;
+            font-size: 0.95rem;
+        }
+
+        .example-item:last-child {
+            border-bottom: none;
+        }
+
+        .product-name {
+            font-weight: 600;
+            color: #0f3460;
+        }
+
+        .tariff-code {
+            font-family: monospace;
+            color: #1e88e5;
+            font-weight: bold;
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e8ecef;
+            color: #34495e;
+            font-weight: 500;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.5rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            color: #1e88e5;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.4rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .benefit-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+        }
+
+        /* Related Services */
+        .related-services {
+            background: #ffffff;
+            padding: 4rem 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #5a6c7d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .service-link {
+            display: inline-block;
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.3rem;
+        }
+
+        .service-link:hover {
+            color: #0f3460;
+            border-bottom-color: #1e88e5;
+            transform: translateX(5px);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            line-height: 1.8;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" type="image/png" href="LOGO.webp">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LEGAL LOGÍSTIC INNOVA</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="despachante-de-aduana-panama.html">Servicios</a>
+                <a href="#contacto" class="contact-btn">Cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="breadcrumb-container">
+            <div class="breadcrumb-list">
+                <a href="index.html">Inicio</a> &gt; 
+                <a href="despachante-de-aduana-panama.html">Despachante de Aduana Panamá</a> &gt; 
+                <span>Clasificación Arancelaria Panamá</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Clasificación Arancelaria Panamá - Análisis Técnico Especializado</h1>
+            <p class="subtitle">Especialistas en clasificación arancelaria con análisis técnico profundo para correcta determinación arancelaria y tributaria según el Sistema Armonizado, optimizando costos y minimizando riesgos de reclasificación.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Solicitar Análisis</a>
+                <a href="#beneficios" class="btn-primary">Ver Beneficios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-text">
+                    <div class="content-section">
+                        <h2>Servicios Especializados de Clasificación Arancelaria en Panamá</h2>
+                        <p>En Legal Logístic Innova ofrecemos servicios especializados de clasificación arancelaria que garantizan la correcta determinación del código arancelario aplicable a sus mercaderías según el Sistema Armonizado de Designación y Codificación de Mercaderías adoptado en Panamá. Nuestro equipo técnico cuenta con amplia experiencia en el análisis de productos complejos, componentes industriales, mercaderías transformadas y productos especializados que requieren criterios técnicos precisos para su correcta clasificación.</p>
+
+                        <p>La clasificación arancelaria correcta es fundamental para el cumplimiento aduanero y la optimización de costos en operaciones de comercio exterior. Una clasificación errónea puede resultar en pagos excesivos de tributos, multas por reclasificación, demoras en despachos y problemas de cumplimiento que afectan la operatividad del negocio. Nuestro enfoque preventivo se basa en análisis técnico riguroso, investigación documental exhaustiva y aplicación correcta de las Reglas Generales Interpretativas del Sistema Armonizado.</p>
+
+                        <h3>Análisis Técnico Especializado</h3>
+                        <p>Realizamos análisis técnico detallado que incluye evaluación de composición química, procesos de fabricación, función principal del producto, características físicas, propiedades técnicas y uso previsto de las mercaderías. Este análisis se basa en especificaciones técnicas del fabricante, hojas de datos de seguridad, certificados de análisis, manuales de usuario y cualquier documentación técnica disponible que permita determinar con precisión las características esenciales del producto.</p>
+
+                        <p>Para mercaderías complejas que pueden clasificarse en múltiples posiciones arancelarias, aplicamos las Reglas Generales Interpretativas, particularmente la Regla 3 que gobierna la clasificación de productos que prima facie pueden incluirse en dos o más partidas. Nuestro análisis considera el carácter esencial del producto, el grado de acabado, la especificidad de uso y otros criterios técnicos establecidos en las notas explicativas del Sistema Armonizado.</p>
+
+                        <h3>Investigación y Precedentes Aduaneros</h3>
+                        <p>Mantenemos un sistema actualizado de investigación que incluye precedentes aduaneros de la Autoridad Nacional de Aduanas (ANA), resoluciones de organismos internacionales, decisiones del Consejo de Cooperación Aduanera, notas explicativas actualizadas y criterios interpretativos emitidos por autoridades aduaneras de otros países con sistemas arancelarios similares.</p>
+
+                        <p>Esta investigación exhaustiva nos permite identificar criterios establecidos para productos similares, tendencias en interpretación arancelaria, cambios normativos que puedan afectar la clasificación y mejores prácticas aplicadas en jurisdicciones comparables. Esta información es fundamental para sustentar nuestras recomendaciones de clasificación y proporcionar respaldo técnico ante eventuales cuestionamientos de las autoridades aduaneras.</p>
+
+                        <h3>Gestión de Consultas Arancelarias</h3>
+                        <p>Para productos nuevos, innovadores o de clasificación compleja, gestionamos consultas arancelarias vinculantes ante la Autoridad Nacional de Aduanas. Este proceso incluye la preparación de documentación técnica detallada, descripción pormenorizada del producto, análisis de características esenciales, propuesta de clasificación fundamentada y seguimiento del proceso hasta obtener resolución oficial.</p>
+
+                        <p>Las consultas arancelarias vinculantes proporcionan seguridad jurídica al importador o exportador, garantizando que la clasificación aplicada será respetada por las autoridades aduaneras durante el período de vigencia de la resolución. Esto es particularmente valioso para empresas con operaciones recurrentes o productos de alto valor donde la incertidumbre arancelaria puede generar riesgos financieros significativos.</p>
+
+                        <div class="classification-examples">
+                            <h4>Ejemplos de Clasificaciones Complejas</h4>
+                            <ul class="example-list">
+                                <li class="example-item">
+                                    <span class="product-name">Equipos Médicos Electrónicos</span>
+                                    <span class="tariff-code">9018.XX.XX</span>
+                                </li>
+                                <li class="example-item">
+                                    <span class="product-name">Maquinaria Industrial Especializada</span>
+                                    <span class="tariff-code">8479.XX.XX</span>
+                                </li>
+                                <li class="example-item">
+                                    <span class="product-name">Productos Químicos Compuestos</span>
+                                    <span class="tariff-code">3824.XX.XX</span>
+                                </li>
+                                <li class="example-item">
+                                    <span class="product-name">Dispositivos de Telecomunicaciones</span>
+                                    <span class="tariff-code">8517.XX.XX</span>
+                                </li>
+                                <li class="example-item">
+                                    <span class="product-name">Componentes Automotrices</span>
+                                    <span class="tariff-code">8708.XX.XX</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h3>Optimización de Costos Arancelarios</h3>
+                        <p>Nuestro análisis no se limita a la determinación técnica del código arancelario, sino que incluye evaluación de alternativas de clasificación que puedan resultar en optimización de costos tributarios. Esto incluye análisis de subpartidas con tratamiento arancelario preferencial, evaluación de elegibilidad para regímenes especiales, identificación de clasificaciones alternativas técnicamente válidas y análisis de impacto tributario de diferentes opciones de clasificación.</p>
+
+                        <p>Para empresas con múltiples productos o líneas de productos complejas, desarrollamos matrices de clasificación que facilitan la aplicación consistente de criterios de clasificación, reducen riesgos de errores operativos y aseguran uniformidad en el tratamiento arancelario de productos similares. Estas herramientas son especialmente valiosas para departamentos de comercio exterior que manejan volúmenes significativos de importaciones o exportaciones.</p>
+
+                        <h3>Auditorías de Clasificación Arancelaria</h3>
+                        <p>Realizamos auditorías comprehensive de clasificaciones arancelarias existentes para identificar oportunidades de optimización, corregir clasificaciones incorrectas, actualizar códigos según cambios normativos y evaluar riesgos de contingencias futuras. Estas auditorías incluyen revisión de historiales de importación, análisis de consistencia en clasificaciones aplicadas, evaluación de documentación soporte y recomendaciones para mejoras en procesos internos de clasificación.</p>
+
+                        <p>El resultado de nuestras auditorías es un reporte detallado que incluye hallazgos específicos, recomendaciones de corrección, análisis de impacto financiero, plan de implementación de mejoras y protocolos para mantener precisión en clasificaciones futuras. Este enfoque sistemático ayuda a las empresas a mantener cumplimiento aduanero óptimo y evitar contingencias costosas.</p>
+
+                        <h3>Capacitación y Transferencia de Conocimiento</h3>
+                        <p>Proporcionamos capacitación especializada a equipos internos de comercio exterior sobre metodología de clasificación arancelaria, aplicación de Reglas Generales Interpretativas, uso de herramientas de investigación, procedimientos para consultas arancelarias y mejores prácticas para mantener precisión en clasificaciones recurrentes.</p>
+
+                        <p>Nuestros programas de capacitación se adaptan al nivel técnico del personal, tipo de productos manejados por la empresa, complejidad de operaciones comerciales y necesidades específicas de entrenamiento identificadas. Incluimos casos prácticos basados en productos reales de la empresa, ejercicios de clasificación supervisados y desarrollo de protocolos internos para clasificación consistente.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Contacto Inmediato</h3>
+                    
+                    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20clasificación%20arancelaria%20en%20Panamá" class="whatsapp-btn">
+                        +507 6697-7997
+                    </a>
+
+                    <h3>Sectores Especializados</h3>
+                    <ul class="features-list">
+                        <li>Equipos Médicos y Farmacéuticos</li>
+                        <li>Maquinaria Industrial</li>
+                        <li>Productos Químicos</li>
+                        <li>Dispositivos Electrónicos</li>
+                        <li>Componentes Automotrices</li>
+                        <li>Productos Alimentarios</li>
+                        <li>Textiles y Confecciones</li>
+                        <li>Materiales de Construcción</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section" id="beneficios">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 1rem; font-family: 'Times New Roman', serif;">Beneficios de una Clasificación Correcta</h2>
+            <p style="text-align: center; color: #5a6c7d; margin-bottom: 2rem;">Una clasificación arancelaria precisa genera beneficios tangibles y protege su operación comercial.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h4>Optimización de Costos</h4>
+                    <p>Reducción de tributos aduaneros mediante clasificación correcta y aprovechamiento de preferencias arancelarias disponibles.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚖️</div>
+                    <h4>Cumplimiento Normativo</h4>
+                    <p>Eliminación de riesgos de sanciones, multas y contingencias por clasificaciones incorrectas o inconsistentes.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h4>Agilización de Despachos</h4>
+                    <p>Reducción de demoras y observaciones aduaneras mediante clasificaciones técnicamente fundamentadas.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📋</div>
+                    <h4>Seguridad Jurídica</h4>
+                    <p>Respaldo técnico y legal para sustentar clasificaciones ante autoridades aduaneras y auditorías.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <h2>¿Necesita Clasificación Arancelaria Especializada?</h2>
+            <p>Contacte a nuestros expertos técnicos y garantice clasificaciones precisas que optimicen sus costos aduaneros y minimicen riesgos operativos.</p>
+            <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20clasificación%20arancelaria%20en%20Panamá" class="btn-primary">Contactar Especialista</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LEGAL LOGÍSTIC INNOVA - CLASIFICACIÓN ARANCELARIA PANAMÁ</strong></p>
+            <p>Especialistas en Análisis Técnico Arancelario y Comercio Exterior</p>
+            <p>Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9</p>
+            <p>WhatsApp: +507 6697-7997 | Ciudad de Panamá, República de Panamá</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20clasificación%20arancelaria%20en%20Panamá" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 52, 96, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 52, 96, 0.96)';
+            }
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

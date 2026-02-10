@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logística de Importación Panamá | Legal Logístic Innova</title>
+    <meta name="description" content="Logística de importación en Panamá con gestión integral desde origen hasta destino final, coordinación de transporte, almacenamiento y distribución. Legal Logístic Innova, especialistas con más de 10 años.">
+    <meta name="keywords" content="logistica importacion panama, transporte importacion panama, almacenamiento importacion panama, distribucion importacion panama, cadena suministro panama">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Logística de Importación Panamá",
+        "description": "Servicio especializado de logística de importación con gestión integral desde origen hasta destino final",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Legal Logístic Innova",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9",
+                "addressLocality": "Ciudad de Panamá",
+                "addressRegion": "Panamá",
+                "postalCode": "0801",
+                "addressCountry": "PA"
+            },
+            "telephone": "+50766977997"
+        },
+        "areaServed": ["Ciudad de Panamá", "Colón", "David", "Santiago", "Chitré"],
+        "serviceType": "Logística de Importación",
+        "category": "Servicios Logísticos"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 52, 96, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #1e88e5;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8ecef;
+            margin-top: 90px;
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-list a {
+            color: #1e88e5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: #0f3460;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #0f3460;
+            margin-bottom: 2rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #5a6c7d;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .main-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a6c7d;
+        }
+
+        .main-text p {
+            margin-bottom: 2rem;
+        }
+
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .process-step {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #1e88e5;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .process-step h4 {
+            font-size: 1.4rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        .process-step p {
+            color: #5a6c7d;
+            line-height: 1.6;
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e8ecef;
+            color: #34495e;
+            font-weight: 500;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.5rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: #1e88e5;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .benefit-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+
+        /* Related Services */
+        .related-services {
+            background: #ffffff;
+            padding: 4rem 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #5a6c7d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .service-link {
+            display: inline-block;
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.3rem;
+        }
+
+        .service-link:hover {
+            color: #0f3460;
+            border-bottom-color: #1e88e5;
+            transform: translateX(5px);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            line-height: 1.8;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" type="image/png" href="LOGO.webp">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LEGAL LOGÍSTIC INNOVA</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicio-logistica-panama.html">Servicios</a>
+                <a href="#contacto" class="contact-btn">Cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="breadcrumb-container">
+            <div class="breadcrumb-list">
+                <a href="index.html">Inicio</a> &gt; 
+                <a href="servicio-logistica-panama.html">Servicio de Logística Panamá</a> &gt; 
+                <span>Logística de Importación Panamá</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Logística de Importación Panamá - Gestión Integral Origen a Destino</h1>
+            <p class="subtitle">Especialistas en logística de importación con gestión completa desde origen hasta destino final, coordinación de transporte multimodal, almacenamiento estratégico y distribución eficiente aprovechando la infraestructura de clase mundial de Panamá.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Solicitar Servicio</a>
+                <a href="#proceso" class="btn-primary">Ver Proceso</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-text">
+                    <div class="content-section">
+                        <h2>Servicios Especializados de Logística de Importación en Panamá</h2>
+                        <p>En Legal Logístic Innova ofrecemos servicios integrales de logística de importación que optimizan toda la cadena de suministro desde el punto de origen hasta la entrega final en destino. Aprovechamos la posición estratégica de Panamá como hub logístico mundial, su infraestructura portuaria y aeroportuaria de primer nivel, y nuestra experiencia especializada para crear soluciones logísticas que reduzcan costos, mejoren tiempos de tránsito y proporcionen visibilidad completa de operaciones de importación.</p>
+
+                        <p>Panamá ofrece ventajas únicas para operaciones de logística de importación incluyendo conectividad marítima con más de 180 puertos mundiales a través del Canal de Panamá, facilidades aeroportuarias con capacidad de carga especializada, red ferroviaria interoceánica que facilita transporte desde puertos atlánticos hasta pacíficos, zonas francas logísticas con beneficios operativos y ubicación geográfica que minimiza tiempos de tránsito hacia mercados centroamericanos, caribeños y sudamericanos.</p>
+
+                        <h3>Coordinación Integral desde Origen</h3>
+                        <p>Iniciamos nuestra gestión logística desde el punto de origen con coordinación directa con proveedores, fábricas, exportadores y agentes en países de origen para asegurar preparación correcta de mercaderías, documentación completa, empaque apropiado para transporte internacional, etiquetado conforme a regulaciones de destino y programación de embarques que optimice utilización de espacios de carga y minimice tiempos de espera en puertos o aeropuertos de embarque.</p>
+
+                        <p>Nuestro equipo mantiene comunicación constante con origenes de carga para monitorear estatus de producción, confirmar fechas de embarque, coordinar inspecciones pre-embarque cuando sean requeridas, verificar cumplimiento de especificaciones técnicas y asegurar que toda la documentación necesaria esté preparada antes del arribo de mercaderías a puertos o aeropuertos de embarque. Esta coordinación proactiva previene demoras y asegura flujo eficiente de mercaderías desde origen.</p>
+
+                        <h3>Gestión de Transporte Multimodal</h3>
+                        <p>Coordinamos transporte multimodal eficiente que combina modalidades marítimas, aéreas, terrestres y ferroviarias según características específicas de cada carga, urgencia de entrega, consideraciones de costo y requisitos especiales de manejo. Nuestra red de transportistas certificados y operadores logísticos especializados nos permite ofrecer opciones flexibles que se adapten a diferentes necesidades operativas, desde cargas consolidadas económicas hasta servicios express para mercaderías urgentes.</p>
+
+                        <p>Para cargas que requieren manejo especializado, coordinamos servicios de transporte con equipos especializados incluyendo contenedores refrigerados para productos que requieren cadena de frío, equipos para carga sobredimensionada, transporte de mercaderías peligrosas bajo regulaciones internacionales IMDG, IATA y ADR, y servicios de alta seguridad para productos de alto valor que requieren custodia especializada y seguros de carga apropiados.</p>
+
+                        <h3>Operaciones Portuarias y Aeroportuarias</h3>
+                        <p>Gestionamos operaciones en puertos y aeropuertos panameños con coordinación directa con terminales especializadas, autoridades portuarias, navieras, aerolíneas y operadores de carga para asegurar desconsolidación eficiente, manejo apropiado de mercaderías, cumplimiento de procedimientos de seguridad, optimización de tiempos de permanencia en terminales y coordinación de transporte hacia facilidades de almacenamiento o destino final según programación establecida.</p>
+
+                        <p>Aprovechamos las facilidades modernas de puertos como Balboa, Colon Container Terminal, PSA Panama International Terminal y Manzanillo International Terminal que ofrecen equipos especializados, sistemas automatizados de manejo de carga, facilidades de almacenamiento temporal y conectividad directa con redes de transporte terrestre y ferroviario. Para cargas aéreas, coordinamos en el Aeropuerto Internacional de Tocumen que cuenta con facilidades de carga especializadas y conectividad con aerolíneas de carga internacionales.</p>
+
+                        <h3>Almacenamiento Estratégico y Gestión de Inventarios</h3>
+                        <p>Operamos y coordinamos facilidades de almacenamiento estratégicamente ubicadas que incluyen bodegas generales, almacenes con control de temperatura y humedad, facilidades para mercaderías peligrosas, bodegas fiscales bajo control aduanero y centros de distribución que faciliten consolidación, desconsolidación, reempaque, etiquetado y preparación de pedidos según requisitos específicos de destino final.</p>
+
+                        <p>Implementamos sistemas avanzados de gestión de inventarios que proporcionan control en tiempo real de existencias, trazabilidad completa de movimientos, rotación apropiada de productos con fechas de vencimiento, alertas automáticas para reposición de inventarios y reportes detallados que faciliten planificación de demanda y optimización de niveles de stock. Estos sistemas se integran con plataformas de clientes para proporcionar visibilidad continua de inventarios disponibles.</p>
+
+                        <h3>Distribución Regional y Last Mile</h3>
+                        <p>Coordinamos redes de distribución que aprovechan la posición central de Panamá para facilitar distribución eficiente hacia mercados centroamericanos, caribeños, colombianos, ecuatorianos y otros destinos regionales. Nuestras operaciones incluyen consolidación de cargas para múltiples destinos, optimización de rutas de distribución, coordinación con operadores locales en países de destino y gestión de entregas hasta puntos finales de consumo.</p>
+
+                        <p>Para operaciones de last mile que requieren entrega directa a consumidores finales, coordinamos con redes especializadas de distribución urbana, servicios de mensajería, plataformas de e-commerce y operadores de delivery que aseguren entrega oportuna con opciones de tracking, confirmación de entrega, gestión de devoluciones y servicios post-venta que complementen la experiencia logística integral.</p>
+
+                        <h3>Tecnología y Visibilidad Operativa</h3>
+                        <p>Implementamos plataformas tecnológicas que proporcionan visibilidad completa de operaciones logísticas incluyendo sistemas de gestión de transporte (TMS), gestión de almacenes (WMS), tracking de carga en tiempo real, integración con sistemas de clientes mediante APIs, alertas automáticas para excepciones operativas y dashboards personalizados que faciliten monitoreo de performance y toma de decisiones basada en datos objetivos.</p>
+
+                        <p>Proporcionamos a nuestros clientes acceso a portales web y aplicaciones móviles que permiten consultar estatus de embarques, ubicación de mercaderías, inventarios disponibles, documentación digitalizada, reportes de performance, facturación electrónica y comunicación directa con equipos operativos. Esta tecnología facilita integración con sistemas internos de clientes y automatización de procesos logísticos recurrentes.</p>
+
+                        <h3>Gestión de Riesgos y Contingencias</h3>
+                        <p>Implementamos estrategias comprehensivas de gestión de riesgos que incluyen análisis de vulnerabilidades en cadenas de suministro, desarrollo de planes de contingencia para disrupciones operativas, seguros de carga apropiados, diversificación de rutas y proveedores de servicios, monitoreo de condiciones meteorológicas y políticas que puedan afectar operaciones y protocolos de respuesta rápida para minimizar impacto de eventos disruptivos.</p>
+
+                        <p>Mantenemos planes de continuidad de negocio que incluyen rutas alternativas de transporte, facilidades de almacenamiento backup, proveedores alternativos de servicios logísticos, procedimientos de comunicación de emergencia y coordinación con aseguradoras para resolución rápida de reclamaciones. Estos planes se actualizan regularmente mediante simulacros y análisis de lecciones aprendidas de disrupciones previas.</p>
+
+                        <h3>Cumplimiento Normativo y Documentación</h3>
+                        <p>Aseguramos cumplimiento integral de regulaciones aplicables a operaciones de importación incluyendo normativas aduaneras, restricciones de importación, regulaciones sanitarias y fitosanitarias, normas técnicas de productos, certificaciones requeridas por organismos anuentes, regulaciones de transporte de mercaderías peligrosas y cumplimiento de regulaciones internacionales aplicables a operaciones logísticas transfronterizas.</p>
+
+                        <p>Gestionamos toda la documentación requerida para operaciones de importación incluyendo facturas comerciales, documentos de transporte, certificados de origen, permisos de importación, certificaciones técnicas, pólizas de seguro, manifiestos de carga y documentación específica según tipo de producto y regulaciones de países de origen. Esta documentación se mantiene organizada y disponible digitalmente para facilitar procesos de despacho aduanero y auditorías de cumplimiento.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Contacto Inmediato</h3>
+                    
+                    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20logística%20de%20importación%20en%20Panamá" class="whatsapp-btn">
+                        +507 6697-7997
+                    </a>
+
+                    <h3>Modalidades de Transporte</h3>
+                    <ul class="features-list">
+                        <li>Transporte Marítimo</li>
+                        <li>Transporte Aéreo</li>
+                        <li>Transporte Terrestre</li>
+                        <li>Transporte Ferroviario</li>
+                        <li>Multimodal Combinado</li>
+                        <li>Carga Consolidada</li>
+                        <li>Servicios Express</li>
+                        <li>Carga Especializada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="main-content" id="proceso" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="content-section">
+                <h2>Proceso de Logística de Importación</h2>
+                <p>Nuestro proceso estructurado asegura gestión eficiente desde origen hasta destino final con visibilidad completa.</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Coordinación en Origen</h4>
+                    <p>Coordinación directa con proveedores y exportadores para preparación de mercaderías, documentación y programación de embarques.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Gestión de Transporte</h4>
+                    <p>Coordinación de transporte multimodal desde origen hasta Panamá con optimización de rutas y costos.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Operaciones Portuarias</h4>
+                    <p>Gestión en puertos y aeropuertos con manejo especializado, desconsolidación y coordinación con terminales.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Almacenamiento</h4>
+                    <p>Almacenamiento estratégico con gestión de inventarios, control de calidad y preparación de pedidos.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h4>Distribución</h4>
+                    <p>Distribución eficiente hacia destinos finales con optimización de rutas y coordinación last mile.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h4>Seguimiento</h4>
+                    <p>Monitoreo continuo con visibilidad en tiempo real, reportes de performance y gestión de excepciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 1rem; font-family: 'Times New Roman', serif;">Ventajas de Logística de Importación desde Panamá</h2>
+            <p style="text-align: center; color: #5a6c7d; margin-bottom: 2rem;">Aprovechamos las ventajas únicas de Panamá como hub logístico mundial para optimizar sus importaciones.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌊</div>
+                    <h4>Hub Marítimo Global</h4>
+                    <p>Conectividad con 180+ puertos mundiales a través del Canal de Panamá y facilidades portuarias modernas.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✈️</div>
+                    <h4>Centro Aéreo Regional</h4>
+                    <p>Aeropuerto Internacional de Tocumen con facilidades de carga y conectividad con aerolíneas globales.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚂</div>
+                    <h4>Transporte Ferroviario</h4>
+                    <p>Red ferroviaria interoceánica que facilita transporte eficiente entre costas atlántica y pacífica.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏢</div>
+                    <h4>Zonas Francas</h4>
+                    <p>Facilidades logísticas especializadas con beneficios operativos y fiscales para importaciones.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h4>Tecnología Avanzada</h4>
+                    <p>Sistemas automatizados de gestión logística con visibilidad en tiempo real y integración digital.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h4>Tiempos Optimizados</h4>
+                    <p>Posición geográfica estratégica que minimiza tiempos de tránsito hacia mercados regionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <h2>¿Listo para Optimizar su Logística de Importación?</h2>
+            <p>Contacte a nuestros especialistas y descubra cómo podemos transformar su cadena de suministro de importación con gestión integral y aprovechamiento de las ventajas estratégicas de Panamá.</p>
+            <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20logística%20de%20importación%20en%20Panamá" class="btn-primary">Contactar Especialista</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LEGAL LOGÍSTIC INNOVA - LOGÍSTICA DE IMPORTACIÓN PANAMÁ</strong></p>
+            <p>Especialistas en Gestión Integral de Cadena de Suministro de Importación</p>
+            <p>Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9</p>
+            <p>WhatsApp: +507 6697-7997 | Ciudad de Panamá, República de Panamá</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20logística%20de%20importación%20en%20Panamá" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 52, 96, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 52, 96, 0.96)';
+            }
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

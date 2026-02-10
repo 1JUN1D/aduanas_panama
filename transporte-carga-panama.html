@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte de Carga Panamá | Legal Logístic Innova</title>
+    <meta name="description" content="Servicios profesionales de transporte de carga en Panamá con soluciones multimodales, gestión logística integral y cobertura nacional e internacional. Legal Logístic Innova, especialistas con más de 10 años.">
+    <meta name="keywords" content="transporte carga panama, logistica transporte panama, flete panama, carga maritima panama, carga aerea panama, transporte terrestre panama, distribucion mercancias panama">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Transporte de Carga Panamá",
+        "description": "Servicio especializado de transporte de carga con soluciones multimodales y cobertura nacional e internacional",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Legal Logístic Innova",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9",
+                "addressLocality": "Ciudad de Panamá",
+                "addressRegion": "Panamá",
+                "postalCode": "0801",
+                "addressCountry": "PA"
+            },
+            "telephone": "+50766977997"
+        },
+        "areaServed": ["Ciudad de Panamá", "Colón", "David", "Santiago", "Chitré", "Bocas del Toro", "Veraguas", "Los Santos", "Herrera", "Coclé", "Panamá Oeste", "Emberá", "Guna Yala", "Ngäbe-Buglé"],
+        "serviceType": "Transporte de Carga",
+        "category": "Servicios Logísticos"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 52, 96, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #1e88e5;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8ecef;
+            margin-top: 90px;
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-list a {
+            color: #1e88e5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: #0f3460;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #0f3460;
+            margin-bottom: 2rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #5a6c7d;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .main-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a6c7d;
+        }
+
+        .main-text p {
+            margin-bottom: 2rem;
+        }
+
+        /* Transportation Cards */
+        .transport-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .transport-card {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .transport-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .transport-icon {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #1e88e5;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .transport-card h4 {
+            font-size: 1.4rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+
+        .transport-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .transport-features {
+            background: rgba(30, 136, 229, 0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .transport-features strong {
+            color: #0f3460;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-details {
+            color: #5a6c7d;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e8ecef;
+            color: #34495e;
+            font-weight: 500;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.5rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: #1e88e5;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .benefit-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+
+        /* Related Services */
+        .related-services {
+            background: #ffffff;
+            padding: 4rem 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #5a6c7d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .service-link {
+            display: inline-block;
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.3rem;
+        }
+
+        .service-link:hover {
+            color: #0f3460;
+            border-bottom-color: #1e88e5;
+            transform: translateX(5px);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            line-height: 1.8;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .transport-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" type="image/png" href="LOGO.webp">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LEGAL LOGÍSTIC INNOVA</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicio-logistica-panama.html">Servicios</a>
+                <a href="#contacto" class="contact-btn">Cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="breadcrumb-container">
+            <div class="breadcrumb-list">
+                <a href="index.html">Inicio</a> &gt; 
+                <a href="servicio-logistica-panama.html">Servicio de Logística Panamá</a> &gt; 
+                <span>Transporte de Carga Panamá</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Transporte de Carga Panamá - Soluciones Logísticas Integrales</h1>
+            <p class="subtitle">Servicios profesionales de transporte de carga con cobertura nacional e internacional, soluciones multimodales y gestión logística especializada para optimización de costos y tiempos de entrega desde Panamá como hub logístico estratégico.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Solicitar Transporte</a>
+                <a href="#modalidades" class="btn-primary">Ver Modalidades</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-text">
+                    <div class="content-section">
+                        <h2>Servicios Profesionales de Transporte de Carga en Panamá</h2>
+                        <p>En Legal Logístic Innova proporcionamos soluciones integrales de transporte de carga adaptadas a necesidades específicas de cada cliente, aprovechando la posición estratégica de Panamá como centro logístico regional y mundial. Nuestros servicios abarcan todas las modalidades de transporte incluyendo marítimo, aéreo, terrestre y multimodal, con cobertura nacional en todas las provincias y conexiones internacionales hacia los principales mercados globales.</p>
+
+                        <p>Contamos con alianzas estratégicas con las principales líneas navieras, aerolíneas de carga, transportistas terrestres y operadores logísticos para ofrecer soluciones competitivas que optimicen costos, tiempos de tránsito y confiabilidad de entregas. Nuestra experiencia de más de 10 años en el sector logístico panameño nos permite comprender las particularidades del mercado local e internacional, proporcionando asesoría especializada para cada tipo de mercancía y destino.</p>
+
+                        <h3>Transporte Marítimo de Carga</h3>
+                        <p>Gestión integral de transporte marítimo desde y hacia Panamá aprovechando la infraestructura portuaria de clase mundial del país. Coordinamos servicios de línea regular, servicios de consolidación (LCL) y contenedores completos (FCL) con las principales navieras internacionales que operan en puertos panameños, incluyendo rutas transpacíficas, transatlánticas, de América del Norte, América del Sur, Europa, Asia y otras regiones estratégicas.</p>
+
+                        <p>Nuestros servicios incluyen reserva de espacio con líneas navieras, gestión de contenedores especializados (refrigerados, open top, flat rack, etc.), coordinación de cargas peligrosas, seguimiento satelital de embarques, gestión de documentación marítima y coordinación con terminales portuarias para optimización de tiempos de operación. Aprovechamos los beneficios del Canal de Panamá para rutas optimizadas hacia destinos globales.</p>
+
+                        <h3>Transporte Aéreo de Carga</h3>
+                        <p>Servicios de transporte aéreo desde el Aeropuerto Internacional de Tocumen, hub de carga aérea regional, hacia destinos en todo el mundo. Ofrecemos soluciones para cargas urgentes, de alto valor, perecederas, farmacéuticas y especializadas que requieren tiempos de tránsito reducidos y manejo cuidadoso durante todo el proceso logístico.</p>
+
+                        <p>Coordinamos con las principales aerolíneas de carga y aerolíneas comerciales con capacidad de carga para ofrecer soluciones competitivas, incluyendo servicios charter cuando sea necesario. Nuestro equipo gestiona documentación aérea, permisos especiales, coordinación con autoridades aeroportuarias y seguimiento en tiempo real de embarques para máxima visibilidad y control.</p>
+
+                        <h3>Transporte Terrestre Nacional e Internacional</h3>
+                        <p>Red de transporte terrestre que cubre todo el territorio panameño y conexiones terrestres internacionales hacia Centroamérica. Contamos con flota propia y alianzas estratégicas con transportistas confiables para servicios de recolección y entrega en todo el país, incluyendo zonas urbanas, rurales y regiones de difícil acceso.</p>
+
+                        <p>Para conexiones internacionales terrestres, coordinamos el paso de fronteras con Costa Rica mediante servicios de transporte que incluyen gestión de trámites aduaneros, obtención de permisos especiales y coordinación con autoridades fronterizas para agilizar cruces. Ofrecemos soluciones de transporte de carga completa y consolidada según volúmenes y frecuencias requeridas.</p>
+
+                        <h3>Soluciones Multimodales Integradas</h3>
+                        <p>Desarrollo de soluciones logísticas que combinan diferentes modalidades de transporte para optimización de costos y tiempos según características específicas de cada operación. Diseñamos rutas que aprovechen las ventajas competitivas de cada modo de transporte, considerando factores como tipo de mercancía, urgencia de entrega, presupuesto disponible, restricciones técnicas y preferencias del cliente.</p>
+
+                        <p>Nuestras soluciones multimodales incluyen combinaciones marítimo-terrestre, aéreo-terrestre, marítimo-aéreo y otras configuraciones que maximicen eficiencia logística. Proporcionamos gestión unificada de toda la cadena de transporte con un solo punto de contacto para simplificar procesos y proporcionar visibilidad completa de la operación.</p>
+
+                        <h3>Carga Especializada y Proyectos</h3>
+                        <p>Transporte de cargas especializadas que requieren manejo específico incluyendo maquinaria pesada, equipo industrial, materiales de construcción, productos de gran volumen, cargas sobredimensionadas, proyectos de ingeniería y otros requerimientos logísticos complejos. Desarrollamos soluciones personalizadas que incluyen estudios de rutas, obtención de permisos especiales, coordinación de escoltas y manejo especializado durante carga, tránsito y descarga.</p>
+
+                        <p>Para proyectos de gran envergadura, ofrecemos servicios de gestión integral que coordinan múltiples embarques, diferentes modalidades de transporte, cronogramas complejos y múltiples destinos. Nuestra experiencia incluye participación en proyectos de infraestructura, energía, minería y otros sectores que requieren logística especializada.</p>
+
+                        <h3>Carga Perecedera y Refrigerada</h3>
+                        <p>Transporte especializado de productos perecederos incluyendo alimentos frescos, productos agrícolas, mariscos, flores, productos farmacéuticos y otros bienes que requieren control de temperatura durante todo el proceso logístico. Contamos con acceso a contenedores y vehículos refrigerados con monitoreo constante de temperatura para garantizar integridad de mercancías.</p>
+
+                        <p>Coordinamos todos los aspectos logísticos para carga perecedera incluyendo documentación sanitaria y fitosanitaria, coordinación con autoridades de salud, manejo en instalaciones especializadas y programación de transportes que minimicen tiempos de tránsito. Nuestro equipo comprende las particularidades de cada tipo de producto perecedero y desarrolla soluciones específicas según requerimientos.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Contacto Inmediato</h3>
+                    
+                    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20transporte%20de%20carga%20en%20Panamá" class="whatsapp-btn">
+                        +507 6697-7997
+                    </a>
+
+                    <h3>Cobertura Nacional</h3>
+                    <ul class="features-list">
+                        <li>Ciudad de Panamá</li>
+                        <li>Colón y Costa Arriba</li>
+                        <li>David y Chiriquí</li>
+                        <li>Santiago de Veraguas</li>
+                        <li>Chitré y Herrera</li>
+                        <li>Las Tablas y Los Santos</li>
+                        <li>Bocas del Toro</li>
+                        <li>Provincias Centrales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transportation Modes Section -->
+    <section class="main-content" id="modalidades" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="content-section">
+                <h2>Modalidades de Transporte de Carga</h2>
+                <p>Ofrecemos soluciones especializadas en todas las modalidades de transporte para adaptarnos a necesidades específicas de cada operación logística.</p>
+            </div>
+
+            <div class="transport-grid">
+                <div class="transport-card">
+                    <div class="transport-icon">🚢</div>
+                    <h4>Transporte Marítimo</h4>
+                    <p>Servicios de línea regular y charter con cobertura global desde puertos panameños, aprovechando la posición estratégica del Canal de Panamá.</p>
+                    <div class="transport-features">
+                        <strong>Ventajas principales:</strong>
+                        <div class="feature-details">• Costos competitivos para grandes volúmenes<br>• Cobertura mundial extensa<br>• Capacidad para todo tipo de mercancías<br>• Servicios especializados disponibles</div>
+                    </div>
+                </div>
+
+                <div class="transport-card">
+                    <div class="transport-icon">✈️</div>
+                    <h4>Transporte Aéreo</h4>
+                    <p>Soluciones de carga aérea desde hub regional de Tocumen hacia destinos globales con tiempos de tránsito reducidos y máxima seguridad.</p>
+                    <div class="transport-features">
+                        <strong>Beneficios clave:</strong>
+                        <div class="feature-details">• Tiempos de entrega más rápidos<br>• Seguridad máxima para cargas valiosas<br>• Servicios express disponibles<br>• Ideal para mercancías urgentes</div>
+                    </div>
+                </div>
+
+                <div class="transport-card">
+                    <div class="transport-icon">🚚</div>
+                    <h4>Transporte Terrestre</h4>
+                    <p>Cobertura nacional completa y conexiones terrestres internacionales hacia Centroamérica con flota moderna y equipos especializados.</p>
+                    <div class="transport-features">
+                        <strong>Características:</strong>
+                        <div class="feature-details">• Flexibilidad en programación<br>• Servicios puerta a puerta<br>• Equipos especializados disponibles<br>• Monitoreo GPS en tiempo real</div>
+                    </div>
+                </div>
+
+                <div class="transport-card">
+                    <div class="transport-icon">🔄</div>
+                    <h4>Transporte Multimodal</h4>
+                    <p>Soluciones integradas que combinan diferentes modos de transporte para optimización de costos, tiempos y eficiencia logística.</p>
+                    <div class="transport-features">
+                        <strong>Ventajas integradas:</strong>
+                        <div class="feature-details">• Optimización de costos totales<br>• Flexibilidad en diseño de rutas<br>• Gestión unificada simplificada<br>• Adaptabilidad a cambios</div>
+                    </div>
+                </div>
+
+                <div class="transport-card">
+                    <div class="transport-icon">📦</div>
+                    <h4>Carga Consolidada</h4>
+                    <p>Servicios de consolidación para optimización de costos en envíos de menor volumen, tanto para carga marítima como aérea.</p>
+                    <div class="transport-features">
+                        <strong>Para pequeños volúmenes:</strong>
+                        <div class="feature-details">• Reducción significativa de costos<br>• Frecuencias regulares de salida<br>• Manejo profesional de consolidación<br>• Servicio puerta a puerta</div>
+                    </div>
+                </div>
+
+                <div class="transport-card">
+                    <div class="transport-icon">🚛</div>
+                    <h4>Carga Completa</h4>
+                    <p>Servicios dedicados para embarques que requieren uso exclusivo de capacidad de transporte, ofreciendo máxima flexibilidad y control.</p>
+                    <div class="transport-features">
+                        <strong>Para grandes volúmenes:</strong>
+                        <div class="feature-details">• Programación según necesidades<br>• Ruteo directo sin escalas<br>• Control total del embarque<br>• Ideal para proyectos especiales</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 1rem; font-family: 'Times New Roman', serif;">Ventajas del Transporte de Carga desde Panamá</h2>
+            <p style="text-align: center; color: #5a6c7d; margin-bottom: 2rem;">Panamá ofrece ventajas estratégicas únicas como plataforma logística para operaciones de transporte de carga.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📍</div>
+                    <h4>Posición Geográfica</h4>
+                    <p>Centro de las Américas con acceso estratégico a mercados norteamericanos, sudamericanos y conexión interoceánica única.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌊</div>
+                    <h4>Canal de Panamá</h4>
+                    <p>Conectividad marítima global con 180+ puertos mundiales y rutas optimizadas hacia todos los continentes.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏢</div>
+                    <h4>Infraestructura Moderna</h4>
+                    <p>Puertos de clase mundial, aeropuerto hub regional y red vial en constante mejora para operaciones eficientes.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h4>Estabilidad Económica</h4>
+                    <p>Economía dolarizada estable, marco legal favorable para negocios y ambiente de inversión seguro.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h4>Tratados Comerciales</h4>
+                    <p>Red de acuerdos comerciales que facilitan operaciones internacionales y reducen barreras arancelarias.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h4>Conectividad Global</h4>
+                    <p>Concentración de líneas navieras, aerolíneas y operadores logísticos internacionales de primer nivel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <h2>¿Necesita Soluciones de Transporte de Carga Confiables?</h2>
+            <p>Contacte a nuestros especialistas en transporte para diseñar soluciones logísticas que optimicen costos, tiempos de entrega y eficiencia operativa según sus necesidades específicas.</p>
+            <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20transporte%20de%20carga%20en%20Panamá" class="btn-primary">Contactar Especialista</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LEGAL LOGÍSTIC INNOVA - TRANSPORTE DE CARGA PANAMÁ</strong></p>
+            <p>Especialistas en Soluciones Multimodales y Logística Integral</p>
+            <p>Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9</p>
+            <p>WhatsApp: +507 6697-7997 | Ciudad de Panamá, República de Panamá</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20transporte%20de%20carga%20en%20Panamá" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 52, 96, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 52, 96, 0.96)';
+            }
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

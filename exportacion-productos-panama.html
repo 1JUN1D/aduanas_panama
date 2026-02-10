@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exportación de Productos Panamá | Legal Logístic Innova</title>
+    <meta name="description" content="Servicios especializados de exportación de productos desde Panamá hacia mercados internacionales con aprovechamiento de tratados comerciales, gestión logística integral y desarrollo de mercados. Empresa de importación y exportación con más de 10 años de experiencia.">
+    <meta name="keywords" content="exportacion productos panama, empresa exportacion panama, exportar productos panama, mercados internacionales panama, tratados comerciales panama, logistica exportacion panama, certificaciones origen panama">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Exportación de Productos Panamá",
+        "description": "Servicio especializado de exportación de productos con gestión integral y acceso a mercados internacionales",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Legal Logístic Innova",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9",
+                "addressLocality": "Ciudad de Panamá",
+                "addressRegion": "Panamá",
+                "postalCode": "0801",
+                "addressCountry": "PA"
+            },
+            "telephone": "+50766977997"
+        },
+        "areaServed": ["Ciudad de Panamá", "Colón", "David", "Santiago", "Chitré", "Panamá Oeste", "Coclé", "Veraguas", "Herrera", "Los Santos", "Bocas del Toro", "Chiriquí"],
+        "serviceType": "Exportación de Productos",
+        "category": "Empresa de Importación y Exportación"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 52, 96, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #1e88e5;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8ecef;
+            margin-top: 90px;
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-list a {
+            color: #1e88e5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: #0f3460;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #0f3460;
+            margin-bottom: 2rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #5a6c7d;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .main-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a6c7d;
+        }
+
+        .main-text p {
+            margin-bottom: 2rem;
+        }
+
+        /* Export Cards */
+        .export-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .export-card {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .export-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .export-icon {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #1e88e5;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .export-card h4 {
+            font-size: 1.4rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+
+        .export-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .export-benefits {
+            background: rgba(30, 136, 229, 0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .export-benefits strong {
+            color: #0f3460;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-details {
+            color: #5a6c7d;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e8ecef;
+            color: #34495e;
+            font-weight: 500;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.5rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: #1e88e5;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .benefit-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+
+        /* Markets Section */
+        .markets-section {
+            background: #ffffff;
+            padding: 4rem 0;
+        }
+
+        .markets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .market-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 3px solid #1e88e5;
+        }
+
+        .market-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .market-flag {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .market-card h4 {
+            font-size: 1.3rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .market-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .market-features {
+            background: rgba(30, 136, 229, 0.1);
+            padding: 0.8rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .market-features span {
+            color: #0f3460;
+            font-size: 0.85rem;
+            display: block;
+            line-height: 1.4;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            line-height: 1.8;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .export-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .markets-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" type="image/png" href="LOGO.webp">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LEGAL LOGÍSTIC INNOVA</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="empresa-importacion-exportacion-panama.html">Empresa de Importación y Exportación</a>
+                <a href="#contacto" class="contact-btn">Cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="breadcrumb-container">
+            <div class="breadcrumb-list">
+                <a href="index.html">Inicio</a> &gt; 
+                <a href="empresa-importacion-exportacion-panama.html">Empresa de Importación y Exportación Panamá</a> &gt; 
+                <span>Exportación de Productos Panamá</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Exportación de Productos Panamá - Acceso a Mercados Globales</h1>
+            <p class="subtitle">Servicios especializados de exportación de productos desde Panamá hacia mercados internacionales con aprovechamiento de tratados comerciales preferenciales, gestión logística integral y desarrollo estratégico de mercados para empresas panameñas y regionales.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Consultar Exportación</a>
+                <a href="#mercados" class="btn-primary">Ver Mercados</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-text">
+                    <div class="content-section">
+                        <h2>Servicios Integrales de Exportación de Productos desde Panamá</h2>
+                        <p>En Legal Logístic Innova facilitamos el acceso de productos panameños y regionales a mercados internacionales mediante servicios integrales de exportación que aprovechan las ventajas competitivas únicas de Panamá como plataforma logística mundial. Nuestra experiencia de más de 10 años en comercio exterior nos permite gestionar eficientemente todos los aspectos técnicos, regulatorios y logísticos involucrados en operaciones de exportación, maximizando competitividad y minimizando complejidades para nuestros clientes.</p>
+
+                        <p>Panamá ofrece ventajas estratégicas extraordinarias para operaciones de exportación incluyendo tratados de libre comercio con Estados Unidos, Unión Europea, EFTA, Canadá, Chile, Singapur, Perú y otros socios comerciales que proporcionan acceso preferencial a mercados que representan más del 80% del PIB mundial. Adicionalmente, la infraestructura logística del país incluye el Canal de Panamá con conectividad a 180 puertos mundiales, facilidades portuarias modernas, aeropuerto hub regional y zonas francas especializadas que optimizan operaciones de exportación.</p>
+
+                        <h3>Desarrollo y Penetración de Mercados Internacionales</h3>
+                        <p>Proporcionamos servicios integrales de desarrollo de mercados que incluyen investigación de oportunidades comerciales, análisis de competencia en mercados objetivo, identificación de canales de distribución apropiados, evaluación de barreras comerciales y técnicas, desarrollo de estrategias de entrada específicas por mercado y establecimiento de relaciones comerciales duraderas con importadores, distribuidores y socios estratégicos en países de destino.</p>
+
+                        <p>Nuestro enfoque se basa en análisis profundo de características específicas de cada mercado incluyendo preferencias de consumidores, regulaciones técnicas aplicables, requisitos de certificación, estructuras de distribución predominantes, competencia local existente, sensibilidad a precios, tendencias de mercado y factores culturales que puedan influir en aceptación de productos. Esta información se traduce en estrategias comerciales personalizadas que maximicen probabilidades de éxito en cada mercado específico.</p>
+
+                        <h3>Gestión de Certificaciones y Cumplimiento Normativo</h3>
+                        <p>Coordinamos obtención de todas las certificaciones requeridas para exportación de productos incluyendo certificados de origen preferencial para aprovechamiento de tratados comerciales, certificados sanitarios y fitosanitarios, certificaciones de calidad, cumplimiento de normas técnicas internacionales, certificaciones específicas por sector y cualquier otro requisito documental exigido por países importadores.</p>
+
+                        <p>Para productos sujetos a regulaciones especiales, gestionamos procesos de registro, análisis de laboratorio, inspecciones previas a exportación y coordinación con autoridades competentes tanto en Panamá como en países de destino. Nuestro conocimiento de normativas internacionales y experiencia en procedimientos de certificación agilizan estos trámites y reducen tiempos de preparación para exportación.</p>
+
+                        <h3>Logística y Transporte Internacional de Exportación</h3>
+                        <p>Gestionamos transporte internacional multimodal que aprovecha la infraestructura logística de Panamá incluyendo servicios marítimos desde puertos de Balboa, Colon Container Terminal, PSA Panama International Terminal y Manzanillo International Terminal hacia destinos mundiales, servicios aéreos de carga desde Aeropuerto Internacional de Tocumen, transporte terrestre hacia mercados centroamericanos y servicios ferroviarios interoceánicos para optimización de conexiones entre costas.</p>
+
+                        <p>Coordinamos con líneas navieras especializadas, aerolíneas de carga, operadores de transporte terrestre, agentes de carga internacional y proveedores de servicios logísticos para estructurar soluciones de transporte que optimicen costos, tiempos de tránsito, confiabilidad de servicios y manejo especializado según características específicas de productos exportados. Esto incluye gestión de contenedores especializados, servicios de consolidación, programas de embarques regulares y servicios express cuando sean requeridos.</p>
+
+                        <h3>Gestión de Documentación Comercial y Financiera</h3>
+                        <p>Preparamos y gestionamos toda la documentación comercial requerida para operaciones de exportación incluyendo factura comercial, lista de empaque, certificados de origen, documentos de transporte, pólizas de seguro, certificados de calidad y cualquier otro documento específico según tipo de producto y requisitos de país importador. Aseguramos exactitud y cumplimiento de normativas internacionales en toda documentación.</p>
+
+                        <p>Coordinamos con instituciones financieras especializadas en comercio exterior para estructurar soluciones de financiamiento que incluyen cartas de crédito de exportación, cobranzas documentarias, factoring de exportaciones, seguros de crédito de exportación y instrumentos de cobertura cambiaria que faciliten flujo de caja y reduzcan exposición a riesgos comerciales y financieros en operaciones internacionales.</p>
+
+                        <h3>Estrategias de Valor Agregado y Diferenciación</h3>
+                        <p>Desarrollamos estrategias de valor agregado para productos de exportación que incluyen adaptación de productos según preferencias de mercados destino, desarrollo de marca internacional, packaging y presentación optimizada, servicios post-venta, soporte técnico para productos especializados y programas de fidelización para compradores internacionales que fortalezcan posición competitiva en mercados globales.</p>
+
+                        <p>Para productos que requieren customización según preferencias de mercados específicos, coordinamos servicios de adaptación que incluyen modificaciones técnicas, certificaciones adicionales, empaque especializado, documentación técnica en idiomas locales y soporte técnico post-venta que facilite adopción exitosa de productos en mercados internacionales. Esto incluye capacitación a distribuidores locales y soporte continuo para resolución de consultas técnicas.</p>
+
+                        <h3>Monitoreo y Optimización de Performance de Exportación</h3>
+                        <p>Implementamos sistemas de monitoreo que evalúan performance de operaciones de exportación incluyendo análisis de costos totales de exportación, tiempos de ciclo desde orden hasta entrega, satisfacción de clientes internacionales, performance de diferentes mercados, efectividad de canales de distribución, rentabilidad por producto y mercado y identificación de oportunidades de mejora y optimización continua.</p>
+
+                        <p>Proporcionamos reportes detallados que incluyen indicadores clave de performance (KPIs), análisis de tendencias, comparaciones benchmarking, identificación de mejores prácticas, recomendaciones de optimización y planes de acción para mejora continua de operaciones de exportación. Esta información facilita toma de decisiones estratégicas basada en datos y optimización continua de resultados comerciales.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Contacto Inmediato</h3>
+                    
+                    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20exportación%20de%20productos%20desde%20Panamá" class="whatsapp-btn">
+                        +507 6697-7997
+                    </a>
+
+                    <h3>Productos que Exportamos</h3>
+                    <ul class="features-list">
+                        <li>Productos Agrícolas</li>
+                        <li>Productos del Mar</li>
+                        <li>Productos Industriales</li>
+                        <li>Artículos de Cuero</li>
+                        <li>Productos de Madera</li>
+                        <li>Textiles y Confecciones</li>
+                        <li>Productos Químicos</li>
+                        <li>Materiales de Construcción</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Export Services Section -->
+    <section class="main-content" id="servicios" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="content-section">
+                <h2>Servicios Especializados de Exportación</h2>
+                <p>Ofrecemos soluciones integrales adaptadas a diferentes tipos de productos y requerimientos específicos de exportación.</p>
+            </div>
+
+            <div class="export-grid">
+                <div class="export-card">
+                    <div class="export-icon">🌱</div>
+                    <h4>Exportación de Productos Agrícolas</h4>
+                    <p>Gestión especializada para exportación de productos agrícolas frescos y procesados con cumplimiento de normativas sanitarias internacionales.</p>
+                    <div class="export-benefits">
+                        <strong>Para sector agrícola:</strong>
+                        <div class="benefit-details">• Certificaciones fitosanitarias<br>• Cadena de frío especializada<br>• Empaque especializado<br>• Cumplimiento de normativas internacionales</div>
+                    </div>
+                </div>
+
+                <div class="export-card">
+                    <div class="export-icon">🐟</div>
+                    <h4>Exportación de Productos del Mar</h4>
+                    <p>Soluciones para exportación de mariscos, pescados y productos acuícolas con manejo especializado y cumplimiento de normativas sanitarias.</p>
+                    <div class="export-benefits">
+                        <strong>Para productos marinos:</strong>
+                        <div class="benefit-details">• Certificaciones sanitarias<br>• Cadena de frío garantizada<br>• Procesamiento especializado<br>• Cumplimiento de cuotas y regulaciones</div>
+                    </div>
+                </div>
+
+                <div class="export-card">
+                    <div class="export-icon">🏭</div>
+                    <h4>Exportación de Productos Industriales</h4>
+                    <p>Gestión integral para exportación de productos manufacturados, componentes industriales y bienes de capital hacia mercados globales.</p>
+                    <div class="export-benefits">
+                        <strong>Para sector industrial:</strong>
+                        <div class="benefit-details">• Documentación técnica especializada<br>• Empaque para protección industrial<br>• Cumplimiento de normativas técnicas<br>• Gestión de garantías internacionales</div>
+                    </div>
+                </div>
+
+                <div class="export-card">
+                    <div class="export-icon">📦</div>
+                    <h4>Exportación de Consumo Masivo</h4>
+                    <p>Soluciones para productos de consumo masivo incluyendo alimentos procesados, bebidas, productos de cuidado personal y artículos para el hogar.</p>
+                    <div class="export-benefits">
+                        <strong>Para productos de consumo:</strong>
+                        <div class="benefit-details">• Etiquetado multilingüe<br>• Adaptación a regulaciones locales<br>• Estrategias de distribución<br>• Gestión de marcas internacionales</div>
+                    </div>
+                </div>
+
+                <div class="export-card">
+                    <div class="export-icon">💎</div>
+                    <h4>Exportación de Productos Especializados</h4>
+                    <p>Gestión para productos de alto valor, artesanías, productos exclusivos y bienes especializados que requieren manejo particular.</p>
+                    <div class="export-benefits">
+                        <strong>Para productos exclusivos:</strong>
+                        <div class="benefit-details">• Manejo de alto valor agregado<br>• Empaque premium especializado<br>• Seguros especializados<br>• Logística de alta seguridad</div>
+                    </div>
+                </div>
+
+                <div class="export-card">
+                    <div class="export-icon">🚀</div>
+                    <h4>Exportación de Proyectos Especiales</h4>
+                    <p>Coordinación de exportaciones para proyectos específicos, eventos internacionales, muestras comerciales y operaciones especiales.</p>
+                    <div class="export-benefits">
+                        <strong>Para proyectos específicos:</strong>
+                        <div class="benefit-details">• Planificación personalizada<br>• Coordinación multidisciplinaria<br>• Soluciones urgentes<br>• Gestión integral de proyectos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 1rem; font-family: 'Times New Roman', serif;">Ventajas de Exportar con Nosotros</h2>
+            <p style="text-align: center; color: #5a6c7d; margin-bottom: 2rem;">Ofrecemos ventajas competitivas que optimizan sus operaciones de exportación desde Panamá.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h4>Tratados Comerciales</h4>
+                    <p>Aprovechamiento de acuerdos comerciales preferenciales que reducen aranceles y facilitan acceso a mercados.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h4>Agilidad Operativa</h4>
+                    <p>Procesos optimizados que reducen tiempos de preparación y entrega en operaciones de exportación.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h4>Reducción de Riesgos</h4>
+                    <p>Gestión preventiva que minimiza exposición a problemas regulatorios, logísticos y comerciales.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h4>Optimización de Costos</h4>
+                    <p>Análisis especializado para minimización de costos totales de exportación y maximización de rentabilidad.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌐</div>
+                    <h4>Acceso a Mercados</h4>
+                    <p>Conectividad con importadores y distribuidores en mercados internacionales estratégicos.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h4>Soporte Estratégico</h4>
+                    <p>Asesoría especializada en desarrollo de mercados y estrategias de expansión internacional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Markets Section -->
+    <section class="markets-section" id="mercados">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 1rem; font-family: 'Times New Roman', serif;">Mercados Internacionales de Exportación</h2>
+            <p style="text-align: center; color: #5a6c7d; margin-bottom: 2rem;">Panamá mantiene tratados comerciales preferenciales que facilitan acceso a los mercados más importantes del mundo.</p>
+            
+            <div class="markets-grid">
+                <div class="market-card">
+                    <div class="market-flag">🇺🇸</div>
+                    <h4>Estados Unidos</h4>
+                    <p>Tratado de Libre Comercio con acceso preferencial al mercado más grande del mundo con 330+ millones de consumidores.</p>
+                    <div class="market-features">
+                        <span>Eliminación aranceles • Acceso preferencial • Facilitación comercial</span>
+                    </div>
+                </div>
+
+                <div class="market-card">
+                    <div class="market-flag">🇪🇺</div>
+                    <h4>Unión Europea</h4>
+                    <p>Acuerdo de Asociación que proporciona acceso preferencial al mercado único europeo con 450+ millones de consumidores.</p>
+                    <div class="market-features">
+                        <span>Eliminación gradual aranceles • Cooperación técnica • Sostenibilidad comercial</span>
+                    </div>
+                </div>
+
+                <div class="market-card">
+                    <div class="market-flag">🇨🇦</div>
+                    <h4>Canadá</h4>
+                    <p>Tratado de Libre Comercio bilateral con acceso preferencial al mercado canadiense y economía desarrollada.</p>
+                    <div class="market-features">
+                        <span>Acceso libre aranceles • Productos agrícolas • Servicios profesionales</span>
+                    </div>
+                </div>
+
+                <div class="market-card">
+                    <div class="market-flag">🇨🇷</div>
+                    <h4>Centroamérica</h4>
+                    <p>Integración regional con libre comercio y facilidades logísticas para distribución centroamericana.</p>
+                    <div class="market-features">
+                        <span>Hub distribución regional • Libre circulación • Costos reducidos</span>
+                    </div>
+                </div>
+
+                <div class="market-card">
+                    <div class="market-flag">🇨🇱</div>
+                    <h4>Chile</h4>
+                    <p>Acuerdo de Libre Comercio con acceso preferencial al mercado chileno y conexión con Alianza del Pacífico.</p>
+                    <div class="market-features">
+                        <span>Eliminación aranceles • Acceso servicios • Cooperación económica</span>
+                    </div>
+                </div>
+
+                <div class="market-card">
+                    <div class="market-flag">🇸🇬</div>
+                    <h4>Singapur</h4>
+                    <p>Tratado de Libre Comercio que facilita acceso al mercado singapurense y conexión con mercados asiáticos.</p>
+                    <div class="market-features">
+                        <span>Acceso preferencial • Cooperación logística • Puerta a Asia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <h2>¿Listo para Exportar sus Productos a Mercados Internacionales?</h2>
+            <p>Contacte a nuestros especialistas en exportación para recibir asesoría personalizada, análisis de oportunidades de mercado y solución integral para sus operaciones de exportación desde Panamá.</p>
+            <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20exportación%20de%20productos%20desde%20Panamá" class="btn-primary">Consultar Especialista</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LEGAL LOGÍSTIC INNOVA - EXPORTACIÓN DE PRODUCTOS PANAMÁ</strong></p>
+            <p>Empresa Especializada en Importación y Exportación con Acceso a Mercados Globales</p>
+            <p>Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9</p>
+            <p>WhatsApp: +507 6697-7997 | Ciudad de Panamá, República de Panamá</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20exportación%20de%20productos%20desde%20Panamá" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 52, 96, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 52, 96, 0.96)';
+            }
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

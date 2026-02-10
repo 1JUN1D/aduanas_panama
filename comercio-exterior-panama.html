@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercio Exterior Panamá | Legal Logístic Innova</title>
+    <meta name="description" content="Servicios integrales de comercio exterior en Panamá con gestión aduanera, logística internacional, asesoría en tratados comerciales y optimización de operaciones de importación y exportación. Empresa especializada con más de 10 años de experiencia.">
+    <meta name="keywords" content="comercio exterior panama, importacion exportacion panama, gestion aduanera panama, tratados comerciales panama, logistica internacional panama, asesoria comercio exterior, despacho aduanero panama">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Comercio Exterior Panamá",
+        "description": "Servicios integrales de comercio exterior con gestión aduanera y logística internacional",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Legal Logístic Innova",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9",
+                "addressLocality": "Ciudad de Panamá",
+                "addressRegion": "Panamá",
+                "postalCode": "0801",
+                "addressCountry": "PA"
+            },
+            "telephone": "+50766977997"
+        },
+        "areaServed": ["Ciudad de Panamá", "Colón", "David", "Santiago", "Chitré", "Panamá Oeste", "Coclé", "Veraguas", "Herrera", "Los Santos", "Bocas del Toro", "Chiriquí"],
+        "serviceType": "Comercio Exterior",
+        "category": "Empresa de Importación y Exportación"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 52, 96, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #1e88e5;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8ecef;
+            margin-top: 90px;
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-list a {
+            color: #1e88e5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: #0f3460;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #0f3460;
+            margin-bottom: 2rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #5a6c7d;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .main-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a6c7d;
+        }
+
+        .main-text p {
+            margin-bottom: 2rem;
+        }
+
+        /* Services Cards */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #1e88e5;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .service-card h4 {
+            font-size: 1.4rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .service-features {
+            background: rgba(30, 136, 229, 0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .service-features strong {
+            color: #0f3460;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-details {
+            color: #5a6c7d;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e8ecef;
+            color: #34495e;
+            font-weight: 500;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.5rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: #1e88e5;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .benefit-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+
+        /* Treaty Section */
+        .treaty-section {
+            background: #ffffff;
+            padding: 4rem 0;
+        }
+
+        .treaty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .treaty-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border-left: 4px solid #1e88e5;
+        }
+
+        .treaty-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .treaty-flag {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .treaty-card h4 {
+            font-size: 1.3rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .treaty-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .treaty-benefits {
+            background: rgba(30, 136, 229, 0.1);
+            padding: 0.8rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .treaty-benefits span {
+            color: #0f3460;
+            font-size: 0.85rem;
+            display: block;
+            line-height: 1.4;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            line-height: 1.8;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .treaty-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" type="image/png" href="LOGO.webp">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LEGAL LOGÍSTIC INNOVA</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="empresa-importacion-exportacion-panama.html">Empresa de Importación y Exportación</a>
+                <a href="#contacto" class="contact-btn">Cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="breadcrumb-container">
+            <div class="breadcrumb-list">
+                <a href="index.html">Inicio</a> &gt; 
+                <a href="empresa-importacion-exportacion-panama.html">Empresa de Importación y Exportación Panamá</a> &gt; 
+                <span>Comercio Exterior Panamá</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Comercio Exterior Panamá - Gestión Integral Internacional</h1>
+            <p class="subtitle">Servicios integrales de comercio exterior en Panamá con asesoría especializada en importación, exportación, gestión aduanera, logística internacional y aprovechamiento de tratados comerciales para optimización de operaciones comerciales globales.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Consultar Servicios</a>
+                <a href="#servicios" class="btn-primary">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-text">
+                    <div class="content-section">
+                        <h2>Servicios Integrales de Comercio Exterior en Panamá</h2>
+                        <p>En Legal Logístic Innova ofrecemos servicios integrales de comercio exterior que abarcan todos los aspectos necesarios para operaciones comerciales internacionales exitosas desde y hacia Panamá. Nuestra experiencia de más de 10 años en comercio exterior nos permite proporcionar soluciones completas que integran asesoría estratégica, gestión operativa, cumplimiento normativo y optimización de costos para empresas que participan en mercados globales.</p>
+
+                        <p>Panamá se posiciona como un hub estratégico para operaciones de comercio exterior gracias a su posición geográfica privilegiada, infraestructura logística de clase mundial, sistema económico dolarizado y extensa red de tratados comerciales. Sin embargo, la complejidad de normativas internacionales, procedimientos aduaneros y requisitos específicos por país requiere conocimiento especializado para maximizar beneficios y minimizar riesgos en operaciones de comercio internacional.</p>
+
+                        <h3>Asesoría Estratégica en Comercio Internacional</h3>
+                        <p>Proporcionamos asesoría especializada en desarrollo de estrategias de comercio internacional adaptadas a objetivos específicos de cada empresa. Esto incluye análisis de oportunidades de mercado, evaluación de viabilidad para nuevos productos o mercados, desarrollo de planes de expansión internacional, identificación de socios comerciales estratégicos y estructuración de operaciones comerciales que maximicen rentabilidad y minimicen exposición a riesgos.</p>
+
+                        <p>Nuestro enfoque estratégico considera factores como tendencias de mercado globales, análisis de competencia internacional, evaluación de barreras comerciales, estudio de cadenas de suministro óptimas, análisis de costos totales de operación y desarrollo de modelos comerciales adaptados a características específicas de cada sector y tipo de producto. Esta asesoría proporciona fundamentos sólidos para toma de decisiones informadas en comercio internacional.</p>
+
+                        <h3>Gestión Aduanera Integral</h3>
+                        <p>Coordinamos toda la gestión aduanera para operaciones de importación y exportación incluyendo clasificación arancelaria, valoración aduanera, presentación de declaraciones, cálculo y pago de impuestos y aranceles, gestión de regímenes especiales y coordinación con autoridades aduaneras para inspecciones y controles. Nuestro conocimiento profundo de normativas aduaneras panameñas e internacionales garantiza cumplimiento exacto y optimización de obligaciones fiscales.</p>
+
+                        <p>Implementamos sistemas de gestión aduanera que proporcionan visibilidad completa de cada operación, alertas proactivas sobre cambios normativos, seguimiento en tiempo real de estatus de trámites y reportes detallados para análisis de desempeño y optimización continua. Nuestra experiencia incluye manejo de procedimientos especiales como perfeccionamiento activo, importación temporal, zonas francas y otros regímenes aduaneros específicos.</p>
+
+                        <h3>Logística Internacional Integral</h3>
+                        <p>Gestionamos soluciones logísticas integrales para comercio exterior que incluyen transporte multimodal (marítimo, aéreo, terrestre), servicios de consolidación y desconsolidación, manejo en puertos y aeropuertos, almacenamiento internacional, servicios de distribución última milla y coordinación de cadena de suministro completa desde origen hasta destino final.</p>
+
+                        <p>Coordinamos con nuestra red de aliados estratégicos internacionales para ofrecer soluciones logísticas competitivas que optimicen costos, tiempos de tránsito y confiabilidad de servicios. Esto incluye gestión de documentación de transporte, seguros de carga internacional, seguimiento satelital de embarques y coordinación proactiva para resolución de eventualidades durante el transporte internacional.</p>
+
+                        <h3>Gestión de Tratados Comerciales y Certificaciones</h3>
+                        <p>Maximizamos beneficios disponibles bajo tratados de libre comercio suscritos por Panamá mediante análisis detallado de reglas de origen, optimización de cadenas de suministro para cumplimiento de requisitos preferenciales, gestión de certificaciones de origen, coordinación con autoridades competentes para obtención de documentación preferencial y estructuración de operaciones comerciales que aprovechen al máximo beneficios arancelarios disponibles.</p>
+
+                        <p>Para operaciones bajo múltiples tratados comerciales, desarrollamos estrategias de optimización que consideren ventajas específicas de cada acuerdo, costos de cumplimiento de reglas de origen, tiempos de procesamiento de certificaciones, requisitos documentales específicos y beneficios netos después de considerar todos los costos asociados con aprovechamiento de preferencias arancelarias. Esto incluye análisis de acumulación de origen cuando sea aplicable.</p>
+
+                        <h3>Gestión de Riesgos y Cumplimiento Normativo Internacional</h3>
+                        <p>Implementamos sistemas de gestión de riesgos específicos para comercio exterior que identifiquen potenciales áreas de exposición a sanciones, multas, demoras operativas o costos adicionales. Esto incluye análisis de cumplimiento de regulaciones anti-dumping, derechos compensatorios, restricciones cuantitativas, controles de exportación, sanciones internacionales y cualquier otra medida comercial que pueda afectar operaciones internacionales.</p>
+
+                        <p>Desarrollamos procedimientos internos de cumplimiento normativo adaptados a necesidades específicas de cada cliente, incluyendo controles documentales, verificaciones de socios comerciales, auditorías periódicas de procesos y capacitación a personal involucrado en operaciones de comercio exterior. Nuestro enfoque preventivo reduce exposición a riesgos regulatorios y mejora eficiencia operativa a largo plazo.</p>
+
+                        <h3>Financiamiento y Gestión Financiera Internacional</h3>
+                        <p>Coordinamos con instituciones financieras especializadas en comercio exterior para estructurar soluciones de financiamiento que incluyen cartas de crédito, cobranzas documentarias, factoring internacional, seguros de crédito de exportación, financiamiento pre y post embarque, y instrumentos de cobertura cambiaria que faciliten flujo de caja y reduzcan exposición a riesgos comerciales y financieros en operaciones internacionales.</p>
+
+                        <p>Proporcionamos asesoría en gestión financiera internacional incluyendo análisis de términos de pago internacionales (Incoterms), estructuración de contratos internacionales, gestión de riesgos cambiarios, optimización de flujos financieros internacionales y desarrollo de estrategias de precios internacionales que consideren todos los costos asociados con operaciones de comercio exterior.</p>
+
+                        <h3>Soporte Continuo y Optimización de Operaciones</h3>
+                        <p>Ofrecemos servicios de soporte continuo para optimización de operaciones de comercio exterior incluyendo monitoreo de performance, análisis de indicadores clave (KPIs), identificación de oportunidades de mejora, implementación de mejores prácticas internacionales y desarrollo de planes de optimización continua para aumento de eficiencia y reducción de costos en operaciones comerciales internacionales.</p>
+
+                        <p>Proporcionamos reportes periódicos que incluyen análisis detallado de desempeño de operaciones, comparaciones benchmarking, evaluación de proveedores y socios logísticos, análisis de tendencias de mercado y recomendaciones específicas para mejora continua. Este enfoque de optimización sistemática garantiza que operaciones de comercio exterior mantengan competitividad y rentabilidad en mercados globales dinámicos.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Contacto Inmediato</h3>
+                    
+                    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20comercio%20exterior%20en%20Panamá" class="whatsapp-btn">
+                        +507 6697-7997
+                    </a>
+
+                    <h3>Servicios Principales</h3>
+                    <ul class="features-list">
+                        <li>Importación y Exportación</li>
+                        <li>Gestión Aduanera</li>
+                        <li>Logística Internacional</li>
+                        <li>Certificaciones de Origen</li>
+                        <li>Asesoría en Tratados</li>
+                        <li>Financiamiento Internacional</li>
+                        <li>Gestión de Riesgos</li>
+                        <li>Optimización de Costos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="main-content" id="servicios" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="content-section">
+                <h2>Servicios Especializados de Comercio Exterior</h2>
+                <p>Ofrecemos soluciones integrales adaptadas a diferentes necesidades de empresas que participan en mercados internacionales.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h4>Consultoría en Comercio Exterior</h4>
+                    <p>Asesoría estratégica para desarrollo e implementación de operaciones de comercio internacional adaptadas a objetivos específicos.</p>
+                    <div class="service-features">
+                        <strong>Para expansión internacional:</strong>
+                        <div class="feature-details">• Análisis de oportunidades de mercado<br>• Desarrollo de estrategias<br>• Evaluación de viabilidad<br>• Planes de implementación</div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏛️</div>
+                    <h4>Gestión Aduanera Integral</h4>
+                    <p>Coordinación completa de trámites aduaneros para importación y exportación con cumplimiento normativo garantizado.</p>
+                    <div class="service-features">
+                        <strong>Para cumplimiento regulatorio:</strong>
+                        <div class="feature-details">• Clasificación arancelaria<br>• Valoración aduanera<br>• Gestión de impuestos<br>• Coordinación con autoridades</div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚢</div>
+                    <h4>Logística Internacional</h4>
+                    <p>Gestión de transporte multimodal, almacenamiento y distribución para operaciones de comercio exterior.</p>
+                    <div class="service-features">
+                        <strong>Para optimización logística:</strong>
+                        <div class="feature-details">• Transporte multimodal<br>• Consolidación de carga<br>• Seguros internacionales<br>• Seguimiento en tiempo real</div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📜</div>
+                    <h4>Tratados Comerciales</h4>
+                    <p>Optimización de operaciones bajo acuerdos comerciales preferenciales con gestión de certificaciones de origen.</p>
+                    <div class="service-features">
+                        <strong>Para beneficios arancelarios:</strong>
+                        <div class="feature-details">• Análisis de reglas de origen<br>• Certificaciones preferenciales<br>• Optimización de cadenas<br>• Maximización de beneficios</div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h4>Financiamiento Internacional</h4>
+                    <p>Estructuración de soluciones financieras especializadas para operaciones de comercio exterior.</p>
+                    <div class="service-features">
+                        <strong>Para gestión financiera:</strong>
+                        <div class="feature-details">• Cartas de crédito<br>• Financiamiento comercio<br>• Cobertura cambiaria<br>• Gestión de riesgos crediticios</div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h4>Gestión de Riesgos</h4>
+                    <p>Implementación de sistemas de gestión de riesgos y cumplimiento normativo para operaciones internacionales.</p>
+                    <div class="service-features">
+                        <strong>Para seguridad operativa:</strong>
+                        <div class="feature-details">• Análisis de riesgos país<br>• Cumplimiento normativo<br>• Controles preventivos<br>• Auditorías especializadas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 1rem; font-family: 'Times New Roman', serif;">Ventajas del Comercio Exterior desde Panamá</h2>
+            <p style="text-align: center; color: #5a6c7d; margin-bottom: 2rem;">Panamá ofrece ventajas estratégicas únicas para operaciones de comercio internacional.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📍</div>
+                    <h4>Posición Geográfica</h4>
+                    <p>Centro de las Américas con acceso estratégico a mercados norteamericanos, sudamericanos y conexión interoceánica.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h4>Tratados Comerciales</h4>
+                    <p>Red extensa de acuerdos comerciales que facilitan acceso preferencial a mercados globales importantes.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌊</div>
+                    <h4>Canal de Panamá</h4>
+                    <p>Conectividad marítima global con rutas optimizadas hacia todos los continentes y principales puertos mundiales.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏢</div>
+                    <h4>Infraestructura Moderna</h4>
+                    <p>Puertos de clase mundial, aeropuerto hub regional y centros logísticos especializados para comercio internacional.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h4>Estabilidad Económica</h4>
+                    <p>Economía dolarizada estable con marco legal favorable para negocios internacionales y protección de inversiones.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h4>Eficiencia Operativa</h4>
+                    <p>Procedimientos aduaneros modernizados y servicios logísticos integrados que optimizan tiempos y costos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treaty Section -->
+    <section class="treaty-section">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 1rem; font-family: 'Times New Roman', serif;">Tratados Comerciales de Panamá</h2>
+            <p style="text-align: center; color: #5a6c7d; margin-bottom: 2rem;">Panamá mantiene una red de acuerdos comerciales que facilitan acceso preferencial a mercados estratégicos.</p>
+            
+            <div class="treaty-grid">
+                <div class="treaty-card">
+                    <div class="treaty-flag">🇺🇸</div>
+                    <h4>Estados Unidos</h4>
+                    <p>Tratado de Libre Comercio con acceso preferencial al mercado más grande del mundo desde 2007.</p>
+                    <div class="treaty-benefits">
+                        <span>Eliminación aranceles • Acceso servicios • Protección inversiones</span>
+                    </div>
+                </div>
+
+                <div class="treaty-card">
+                    <div class="treaty-flag">🇪🇺</div>
+                    <h4>Unión Europea</h4>
+                    <p>Acuerdo de Asociación que proporciona acceso preferencial al mercado único europeo desde 2013.</p>
+                    <div class="treaty-benefits">
+                        <span>Eliminación gradual • Cooperación • Desarrollo sostenible</span>
+                    </div>
+                </div>
+
+                <div class="treaty-card">
+                    <div class="treaty-flag">🇨🇦</div>
+                    <h4>Canadá</h4>
+                    <p>Tratado de Libre Comercio bilateral con acceso preferencial desde 2013 para múltiples sectores.</p>
+                    <div class="treaty-benefits">
+                        <span>Acceso preferencial • Servicios • Inversiones</span>
+                    </div>
+                </div>
+
+                <div class="treaty-card">
+                    <div class="treaty-flag">🇨🇱</div>
+                    <h4>Chile</h4>
+                    <p>Acuerdo de Libre Comercio que facilita acceso al mercado chileno y conexión con Alianza del Pacífico.</p>
+                    <div class="treaty-benefits">
+                        <span>Liberalización comercial • Cooperación • Integración regional</span>
+                    </div>
+                </div>
+
+                <div class="treaty-card">
+                    <div class="treaty-flag">🇸🇬</div>
+                    <h4>Singapur</h4>
+                    <p>Tratado de Libre Comercio que facilita acceso al mercado singapurense y conexión con Asia.</p>
+                    <div class="treaty-benefits">
+                        <span>Acceso preferencial • Cooperación logística • Puerta a Asia</span>
+                    </div>
+                </div>
+
+                <div class="treaty-card">
+                    <div class="treaty-flag">🇨🇷</div>
+                    <h4>Centroamérica</h4>
+                    <p>Integración regional con libre comercio y facilidades logísticas para distribución centroamericana.</p>
+                    <div class="treaty-benefits">
+                        <span>Libre circulación • Costos reducidos • Conocimiento mercados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <h2>¿Necesita Optimizar sus Operaciones de Comercio Exterior?</h2>
+            <p>Contacte a nuestros especialistas en comercio exterior para recibir asesoría personalizada, análisis de oportunidades y solución integral para sus operaciones comerciales internacionales desde Panamá.</p>
+            <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20comercio%20exterior%20en%20Panamá" class="btn-primary">Consultar Especialista</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LEGAL LOGÍSTIC INNOVA - COMERCIO EXTERIOR PANAMÁ</strong></p>
+            <p>Empresa Especializada en Comercio Internacional con Gestión Integral</p>
+            <p>Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9</p>
+            <p>WhatsApp: +507 6697-7997 | Ciudad de Panamá, República de Panamá</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20comercio%20exterior%20en%20Panamá" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 52, 96, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 52, 96, 0.96)';
+            }
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

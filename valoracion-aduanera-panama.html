@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valoración Aduanera Panamá | Legal Logístic Innova</title>
+    <meta name="description" content="Valoración aduanera en Panamá con asesoramiento especializado en correcta declaración de valores conforme normativa OMC. Legal Logístic Innova, expertos en métodos de valoración con más de 10 años.">
+    <meta name="keywords" content="valoracion aduanera panama, valor transaccion panama, metodos valoracion panama, precio transferencia panama, valor aduana panama">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Valoración Aduanera Panamá",
+        "description": "Servicio especializado de valoración aduanera con asesoramiento en correcta declaración de valores",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Legal Logístic Innova",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9",
+                "addressLocality": "Ciudad de Panamá",
+                "addressRegion": "Panamá",
+                "postalCode": "0801",
+                "addressCountry": "PA"
+            },
+            "telephone": "+50766977997"
+        },
+        "areaServed": ["Ciudad de Panamá", "Colón", "David", "Santiago", "Chitré"],
+        "serviceType": "Valoración Aduanera",
+        "category": "Servicios Aduaneros"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 52, 96, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #1e88e5;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8ecef;
+            margin-top: 90px;
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-list a {
+            color: #1e88e5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: #0f3460;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 136, 229, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #0f3460;
+            margin-bottom: 2rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #5a6c7d;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .main-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a6c7d;
+        }
+
+        .main-text p {
+            margin-bottom: 2rem;
+        }
+
+        /* Valuation Methods */
+        .valuation-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .method-card {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .method-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #1e88e5;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .method-card h4 {
+            font-size: 1.4rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        .method-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .method-examples {
+            background: rgba(30, 136, 229, 0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .method-examples strong {
+            color: #0f3460;
+            font-size: 0.9rem;
+        }
+
+        .method-examples span {
+            color: #5a6c7d;
+            font-size: 0.85rem;
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e8ecef;
+            color: #34495e;
+            font-weight: 500;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.5rem;
+            color: #0f3460;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+        }
+
+        /* Key Concepts */
+        .key-concepts {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .concepts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .concept-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .concept-icon {
+            font-size: 2.5rem;
+            color: #1e88e5;
+            margin-bottom: 1rem;
+        }
+
+        .concept-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .concept-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+
+        /* Related Services */
+        .related-services {
+            background: #ffffff;
+            padding: 4rem 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #1e88e5;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-card h4 {
+            font-size: 1.2rem;
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #5a6c7d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .service-link {
+            display: inline-block;
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.3rem;
+        }
+
+        .service-link:hover {
+            color: #0f3460;
+            border-bottom-color: #1e88e5;
+            transform: translateX(5px);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #0f3460, #1565c0);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            line-height: 1.8;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .valuation-methods {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .concepts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" type="image/png" href="LOGO.webp">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LEGAL LOGÍSTIC INNOVA</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="despachante-de-aduana-panama.html">Servicios</a>
+                <a href="#contacto" class="contact-btn">Cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="breadcrumb-container">
+            <div class="breadcrumb-list">
+                <a href="index.html">Inicio</a> &gt; 
+                <a href="despachante-de-aduana-panama.html">Despachante de Aduana Panamá</a> &gt; 
+                <span>Valoración Aduanera Panamá</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Valoración Aduanera Panamá - Asesoramiento en Declaración de Valores</h1>
+            <p class="subtitle">Especialistas en valoración aduanera con asesoramiento técnico para correcta declaración de valores conforme a métodos OMC y normativa local, optimizando liquidaciones tributarias y previniendo observaciones aduaneras.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Solicitar Asesoría</a>
+                <a href="#metodos" class="btn-primary">Ver Métodos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-text">
+                    <div class="content-section">
+                        <h2>Servicios Especializados de Valoración Aduanera en Panamá</h2>
+                        <p>En Legal Logístic Innova ofrecemos servicios especializados de valoración aduanera que garantizan la correcta aplicación de métodos de valoración establecidos por la Organización Mundial de Comercio (OMC) y adoptados en la legislación aduanera panameña. Nuestro equipo técnico cuenta con amplia experiencia en análisis de valores de transacción, evaluación de precios de transferencia, determinación de ajustes al valor y aplicación de métodos alternativos de valoración cuando las circunstancias particulares de la transacción así lo requieren.</p>
+
+                        <p>La valoración aduanera correcta es fundamental para el cumplimiento tributario y la prevención de contingencias costosas. Una valoración incorrecta puede resultar en liquidaciones tributarias excesivas, observaciones por parte de las autoridades aduaneras, multas por valoración incorrecta y demoras significativas en procesos de despacho. Nuestro enfoque técnico se basa en análisis riguroso de documentación comercial, evaluación de relaciones entre partes, identificación de elementos gravables y aplicación correcta de la jerarquía de métodos establecida en el Acuerdo sobre Valoración en Aduana de la OMC.</p>
+
+                        <h3>Método del Valor de Transacción</h3>
+                        <p>El método primario de valoración aduanera se basa en el valor de transacción de las mercaderías importadas, que representa el precio realmente pagado o por pagar por las mercaderías cuando son vendidas para exportación al país de importación. Nuestro análisis incluye verificación de que el precio corresponde efectivamente a la transacción comercial, evaluación de la existencia de restricciones sobre disposición o uso de mercaderías, análisis de condiciones o contraprestaciones que afecten el precio y determinación de si la venta o precio están influenciados por relaciones especiales entre comprador y vendedor.</p>
+
+                        <p>Cuando existen relaciones especiales entre las partes, realizamos análisis detallado para determinar si dichas relaciones han influido en el precio. Esto incluye comparación con valores de transacción entre compradores y vendedores no relacionados, aplicación de métodos de prueba establecidos en la normativa y evaluación de circunstancias particulares de la venta que puedan indicar que las relaciones no han influenciado el precio declarado.</p>
+
+                        <h3>Ajustes al Valor de Transacción</h3>
+                        <p>Realizamos análisis técnico para determinar ajustes obligatorios al valor de transacción que deben incluirse en la base gravable para efectos aduaneros. Estos ajustes incluyen comisiones de venta y corretaje excepto comisiones de compra, costos de envases y embalaje considerados como una unidad para efectos de clasificación arancelaria, costos de asistencia técnica, gastos de ingeniería, desarrollo, trabajo artístico, diseño, planos y croquis realizados fuera del territorio aduanero y necesarios para la producción de mercaderías importadas.</p>
+
+                        <p>También evaluamos la inclusión de mercaderías y servicios suministrados directa o indirectamente por el importador sin costo o a costo reducido para su utilización en la producción y venta para exportación de mercaderías importadas. Esto incluye materiales, componentes, partes y elementos similares incorporados en las mercaderías importadas; herramientas, matrices, moldes y elementos similares utilizados en la producción; materiales consumidos en la producción; y trabajos de ingeniería, desarrollo, trabajo artístico, diseño, planes y croquis realizados fuera del territorio aduanero.</p>
+
+                        <h3>Precios de Transferencia y Valoración Aduanera</h3>
+                        <p>Para operaciones entre empresas relacionadas, proporcionamos análisis especializado que evalúa la consistencia entre precios de transferencia aplicados para efectos fiscales y valores declarados para efectos aduaneros. Este análisis incluye revisión de estudios de precios de transferencia existentes, evaluación de metodologías aplicadas, comparación con transacciones independientes y determinación de ajustes necesarios para cumplimiento aduanero.</p>
+
+                        <p>Coordinamos con asesores fiscales para asegurar coherencia entre políticas de precios de transferencia y valoración aduanera, minimizando riesgos de observaciones por inconsistencias entre declaraciones fiscales y aduaneras. Esta coordinación es especialmente importante para multinacionales con operaciones complejas que involucran múltiples jurisdicciones y entidades relacionadas.</p>
+
+                        <h3>Métodos Alternativos de Valoración</h3>
+                        <p>Cuando el método del valor de transacción no puede aplicarse, utilizamos métodos alternativos siguiendo la jerarquía establecida en el Acuerdo sobre Valoración. Esto incluye el método del valor de transacción de mercaderías idénticas, método del valor de transacción de mercaderías similares, método del valor deductivo, método del valor reconstruido y método de último recurso basado en criterios razonables compatibles con principios y disposiciones generales del Acuerdo.</p>
+
+                        <p>Para cada método alternativo, realizamos investigación de mercado, análisis de comparabilidad, documentación de criterios aplicados y justificación técnica de la metodología seleccionada. Esta documentación es fundamental para sustentar la valoración ante autoridades aduaneras y proporcionar respaldo técnico ante eventuales cuestionamientos o verificaciones posteriores.</p>
+
+                        <h3>Documentación y Respaldo Técnico</h3>
+                        <p>Desarrollamos documentación comprehensive que incluye análisis técnico de la valoración aplicada, justificación de método utilizado, respaldo documental de información considerada, cálculos detallados de ajustes aplicados y conclusiones sobre cumplimiento normativo. Esta documentación sirve como respaldo ante autoridades aduaneras, auditorías internas y revisiones de cumplimiento.</p>
+
+                        <p>Mantenemos archivos organizados que facilitan respuestas a requerimientos de información, consultas de autoridades aduaneras y actualizaciones periódicas de valoraciones aplicadas. Esta organización es especialmente valiosa para empresas con operaciones recurrentes que requieren consistencia en aplicación de criterios de valoración y trazabilidad completa de decisiones técnicas adoptadas.</p>
+
+                        <h3>Capacitación y Desarrollo de Protocolos</h3>
+                        <p>Proporcionamos capacitación especializada a equipos internos sobre metodología de valoración aduanera, aplicación práctica de métodos OMC, documentación requerida para sustentar valoraciones, procedimientos para manejo de casos complejos y mejores prácticas para mantener cumplimiento normativo consistente.</p>
+
+                        <p>Desarrollamos protocolos internos adaptados a las operaciones específicas de cada empresa, incluyendo matrices de decisión para selección de métodos, procedimientos para documentación de valoraciones, protocolos para manejo de observaciones aduaneras y sistemas de monitoreo para asegurar aplicación consistente de criterios técnicos establecidos.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Contacto Inmediato</h3>
+                    
+                    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20valoración%20aduanera%20en%20Panamá" class="whatsapp-btn">
+                        +507 6697-7997
+                    </a>
+
+                    <h3>Tipos de Valoración</h3>
+                    <ul class="features-list">
+                        <li>Valor de Transacción</li>
+                        <li>Mercaderías Idénticas</li>
+                        <li>Mercaderías Similares</li>
+                        <li>Método Deductivo</li>
+                        <li>Valor Reconstruido</li>
+                        <li>Último Recurso</li>
+                        <li>Precios de Transferencia</li>
+                        <li>Ajustes Especiales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valuation Methods Section -->
+    <section class="main-content" id="metodos" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="content-section">
+                <h2>Métodos de Valoración Aduanera OMC</h2>
+                <p>Aplicamos la jerarquía completa de métodos de valoración establecidos por la Organización Mundial de Comercio.</p>
+            </div>
+
+            <div class="valuation-methods">
+                <div class="method-card">
+                    <div class="method-number">1</div>
+                    <h4>Valor de Transacción</h4>
+                    <p>Método primario basado en el precio realmente pagado o por pagar por las mercaderías cuando son vendidas para exportación.</p>
+                    <div class="method-examples">
+                        <strong>Aplicable cuando:</strong><br>
+                        <span>• Existe venta real entre partes<br>• No hay restricciones sobre mercaderías<br>• Relaciones no influyen en precio</span>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-number">2</div>
+                    <h4>Mercaderías Idénticas</h4>
+                    <p>Basado en valor de transacción de mercaderías idénticas vendidas para exportación al mismo país de importación.</p>
+                    <div class="method-examples">
+                        <strong>Requiere:</strong><br>
+                        <span>• Mercaderías físicamente iguales<br>• Mismo país de producción<br>• Mismo nivel comercial y cantidad</span>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-number">3</div>
+                    <h4>Mercaderías Similares</h4>
+                    <p>Utilizando valor de transacción de mercaderías similares vendidas para exportación al mismo país de importación.</p>
+                    <div class="method-examples">
+                        <strong>Características:</strong><br>
+                        <span>• Similares en componentes y características<br>• Misma función comercial<br>• Comercialmente intercambiables</span>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-number">4</div>
+                    <h4>Método Deductivo</h4>
+                    <p>Basado en precio de venta en el país de importación, con deducciones apropiadas por costos agregados después de importación.</p>
+                    <div class="method-examples">
+                        <strong>Deducciones incluyen:</strong><br>
+                        <span>• Comisiones y beneficios<br>• Gastos de transporte y seguro<br>• Derechos y tasas aduaneras</span>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-number">5</div>
+                    <h4>Valor Reconstruido</h4>
+                    <p>Calculado sobre la base del costo de producción de mercaderías importadas más cantidad apropiada por beneficios y gastos generales.</p>
+                    <div class="method-examples">
+                        <strong>Componentes:</strong><br>
+                        <span>• Costo de materiales y fabricación<br>• Gastos generales<br>• Beneficios y gastos de venta</span>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-number">6</div>
+                    <h4>Último Recurso</h4>
+                    <p>Aplicando criterios razonables compatibles con principios del Acuerdo, basándose en datos disponibles en país de importación.</p>
+                    <div class="method-examples">
+                        <strong>Basado en:</strong><br>
+                        <span>• Métodos precedentes con flexibilidad<br>• Información disponible localmente<br>• Criterios técnicos razonables</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Concepts -->
+    <section class="key-concepts">
+        <div class="container">
+            <h2 style="text-align: center; color: #0f3460; margin-bottom: 1rem; font-family: 'Times New Roman', serif;">Conceptos Clave en Valoración</h2>
+            <p style="text-align: center; color: #5a6c7d; margin-bottom: 2rem;">Elementos fundamentales para correcta aplicación de métodos de valoración aduanera.</p>
+            
+            <div class="concepts-grid">
+                <div class="concept-card">
+                    <div class="concept-icon">🔗</div>
+                    <h4>Relaciones Especiales</h4>
+                    <p>Análisis de vínculos entre comprador y vendedor que pueden influir en precio declarado.</p>
+                </div>
+
+                <div class="concept-card">
+                    <div class="concept-icon">📈</div>
+                    <h4>Ajustes Obligatorios</h4>
+                    <p>Elementos que deben incluirse en base gravable según normativa OMC vigente.</p>
+                </div>
+
+                <div class="concept-card">
+                    <div class="concept-icon">💱</div>
+                    <h4>Conversión Monetaria</h4>
+                    <p>Aplicación de tipos de cambio oficiales para valoración en moneda nacional.</p>
+                </div>
+
+                <div class="concept-card">
+                    <div class="concept-icon">📋</div>
+                    <h4>Documentación</h4>
+                    <p>Respaldo técnico requerido para sustentar valoración ante autoridades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <h2>¿Necesita Asesoramiento en Valoración Aduanera?</h2>
+            <p>Contacte a nuestros especialistas y garantice valoraciones técnicamente correctas que optimicen sus obligaciones tributarias y prevengan observaciones aduaneras.</p>
+            <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20valoración%20aduanera%20en%20Panamá" class="btn-primary">Contactar Especialista</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LEGAL LOGÍSTIC INNOVA - VALORACIÓN ADUANERA PANAMÁ</strong></p>
+            <p>Especialistas en Métodos OMC y Declaración de Valores Aduaneros</p>
+            <p>Vía Ricardo J. Alfaro, Edificio Century Tower, Piso 1, Oficina D-9-9</p>
+            <p>WhatsApp: +507 6697-7997 | Ciudad de Panamá, República de Panamá</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20valoración%20aduanera%20en%20Panamá" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 52, 96, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 52, 96, 0.96)';
+            }
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
