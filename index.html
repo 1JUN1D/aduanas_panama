@@ -662,6 +662,123 @@
             object-fit: cover;
             z-index: -2;
         }
+        /* Modal de WhatsApp */
+        .whatsapp-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .whatsapp-modal-content {
+            background-color: #ffffff;
+            margin: 10% auto;
+            padding: 0;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 450px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            animation: slideDown 0.3s ease;
+            overflow: hidden;
+        }
+        
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .whatsapp-modal-header {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .whatsapp-modal-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .whatsapp-close {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            line-height: 1;
+        }
+        
+        .whatsapp-close:hover {
+            transform: scale(1.1);
+        }
+        
+        .whatsapp-modal-body {
+            padding: 30px;
+        }
+        
+        .whatsapp-option {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+        
+        .whatsapp-option:hover {
+            background: #e8f5e9;
+            border-color: #25D366;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+        }
+        
+        .whatsapp-option h3 {
+            margin: 0 0 8px 0;
+            color: #0f3460;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .whatsapp-option p {
+            margin: 0;
+            color: #5a6c7d;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .whatsapp-modal-content {
+                width: 95%;
+                margin: 15% auto;
+            }
+            
+            .whatsapp-modal-body {
+                padding: 20px;
+            }
+        }
     </style>
 
     <link rel="shortcut icon" type="image/png" href="logo.webp">
@@ -676,7 +793,10 @@
                 <img src="logo.png" alt="Legal Logistic Innova Logo" class="logo-img">
                 <div class="logo">LEGAL LOGÍSTIC INNOVA</div>
             </div>
-            <a href="#contacto" class="contact-btn">Consulta Gratuita</a>
+            <div style="display: flex; align-items: center; gap: 2rem;">
+                <a href="tel:+50764127227" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 600; letter-spacing: 1px;">📞 +507 6412 7227</a>
+                <a href="#contacto" class="contact-btn">Consulta Gratuita</a>
+            </div>
         </div>
     </header>
 
@@ -721,7 +841,7 @@
                         <a href="despachante-de-aduana-panama.html" class="service-link">Conocer más →</a>
                     </div>
                     <div class="category-image">
-                        <img src="aduanas1.jpg" alt="Despachante de Aduana en Panamá - Gestión aduanera integral" class="service-img">
+                        <img src="aduanas1.webp" alt="Despachante de Aduana en Panamá - Gestión aduanera integral" class="service-img">
                     </div>
                 </div>
             </div>
@@ -734,7 +854,7 @@
             <div class="service-category">
                 <div class="category-content">
                     <div class="category-image">
-                        <img src="aduanas2.jpg" alt="Servicios de Logística en Panamá - Transporte y distribución" class="service-img">
+                        <img src="aduanas2.webp" alt="Servicios de Logística en Panamá - Transporte y distribución" class="service-img">
                     </div>
                     <div class="category-text">
                         <h2>Servicio de Logística Panamá</h2>
@@ -771,7 +891,7 @@
                         <a href="empresa-importacion-exportacion-panama.html" class="service-link">Conocer más →</a>
                     </div>
                     <div class="category-image">
-                        <img src="aduanas3.jpg" alt="Empresa de Importación y Exportación en Panamá - Comercio exterior" class="service-img">
+                        <img src="aduanas3.webp" alt="Empresa de Importación y Exportación en Panamá - Comercio exterior" class="service-img">
                     </div>
                 </div>
             </div>
@@ -786,10 +906,10 @@
                     <div class="category-text">
                         <p style="font-size: 2.8rem; color: #0f3460; margin-bottom: 2rem; font-family: 'Times New Roman', serif; line-height: 1.2; font-weight: 400;">Firma de Abogados en Panamá - Legal Logistic Innova</p>
                         <p style="font-size: 1.1rem; margin-bottom: 2.5rem; color: #5a6c7d; line-height: 1.8;">En Legal Logistic Innova contamos con un equipo de abogados especializados en derecho aduanero, comercio internacional y logística. Brindamos asesoría legal integral para empresas que realizan operaciones de importación y exportación, garantizando el cumplimiento normativo y la protección de sus intereses comerciales en cada transacción.</p>
-                        <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20servicios%20legales%20en%20comercio%20exterior%20con%20Legal%20Logistic%20Innova" target="_blank" class="btn-primary" style="display: inline-block;">Consultar con Abogados</a>
+                        <a href="#" onclick="openWhatsAppModal(); return false;" class="btn-primary" style="display: inline-block;">Consultar con Abogados</a>
                     </div>
                     <div class="category-image">
-                        <img src="aduanas1.jpg" alt="Firma de Abogados Legal Logistic Innova en Panamá" class="service-img">
+                        <img src="aduanas1.webp" alt="Firma de Abogados Legal Logistic Innova en Panamá" class="service-img">
                     </div>
                 </div>
             </div>
@@ -802,12 +922,12 @@
             <div class="service-category">
                 <div class="category-content">
                     <div class="category-image">
-                        <img src="aduanas2.jpg" alt="Asesoría Legal Legal Logistic Innova en Panamá" class="service-img">
+                        <img src="abogado.webp" alt="Asesoría Legal Legal Logistic Innova en Panamá" class="service-img">
                     </div>
                     <div class="category-text">
                         <p style="font-size: 2.8rem; color: #0f3460; margin-bottom: 2rem; font-family: 'Times New Roman', serif; line-height: 1.2; font-weight: 400;">Asesoría Legal - Legal Logistic Innova</p>
                         <p style="font-size: 1.1rem; margin-bottom: 2.5rem; color: #5a6c7d; line-height: 1.8;">Ofrecemos asesoría legal especializada en derecho aduanero, tributario internacional, contratos de comercio exterior, resolución de controversias aduaneras y defensa ante la Autoridad Nacional de Aduanas. Nuestro equipo legal trabaja en conjunto con nuestros especialistas en logística para ofrecer soluciones integrales que protejan y optimicen sus operaciones comerciales internacionales.</p>
-                        <a href="https://wa.me/50766977997?text=Hola,%20necesito%20asesoría%20legal%20con%20Legal%20Logistic%20Innova" target="_blank" class="btn-primary" style="display: inline-block;">Solicitar Asesoría Legal</a>
+                        <a href="#" onclick="openWhatsAppModal(); return false;" class="btn-primary" style="display: inline-block;">Solicitar Asesoría Legal</a>
                     </div>
                 </div>
             </div>
@@ -822,7 +942,7 @@
             
             <div class="areas-content">
                 <div class="areas-image">
-                    <img src="area-cobertura.jpg" alt="Panamá - Servicios de logística y aduanas" class="areas-img">
+                    <img src="area-cobertura.webp" alt="Panamá - Servicios de logística y aduanas" class="areas-img">
                 </div>
                 <div class="areas-text">
                     <h4>República de Panamá</h4>
@@ -878,17 +998,74 @@
             <img src="logo.png" alt="Legal Logistic Innova Logo" class="footer-logo">
             <p><strong>LEGAL LOGÍSTIC INNOVA - OFICINA DE ADUANA PANAMÁ</strong></p>
             <p>Especialistas en Servicios Aduaneros, Logística Integral y Comercio Exterior</p>
-            <p>WhatsApp: +507 6697 7997 | Ciudad de Panamá, República de Panamá</p>
+            <p><strong>Teléfono Principal:</strong> +507 6412 7227 | <strong>Asesoría Legal:</strong> +507 6697 7997</p>
+            <p>Ciudad de Panamá, República de Panamá</p>
             <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2026 LEGAL LOGÍSTIC INNOVA. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/50766977997?text=Hola,%20necesito%20información%20sobre%20servicios%20aduaneros%20y%20logística%20en%20Panamá" target="_blank" class="whatsapp-float">
+    <a href="#" onclick="openWhatsAppModal(); return false;" class="whatsapp-float">
         <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
     </a>
 
+    <!-- Modal de WhatsApp -->
+    <div id="whatsappModal" class="whatsapp-modal">
+        <div class="whatsapp-modal-content">
+            <div class="whatsapp-modal-header">
+                <span class="whatsapp-close" onclick="closeWhatsAppModal()">&times;</span>
+                <h2>¿Cómo podemos ayudarte?</h2>
+            </div>
+            <div class="whatsapp-modal-body">
+                <div class="whatsapp-option" onclick="contactWhatsApp('aduanas')">
+                    <h3>Opción 1: Agente de Aduanas</h3>
+                    <p>Servicios de despacho aduanero, logística integral y comercio exterior</p>
+                </div>
+                <div class="whatsapp-option" onclick="contactWhatsApp('legal')">
+                    <h3>Opción 2: Asesoría Legal</h3>
+                    <p>Consultoría legal en derecho aduanero y comercio internacional</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
+        // Funciones del Modal de WhatsApp
+        function openWhatsAppModal() {
+            document.getElementById('whatsappModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeWhatsAppModal() {
+            document.getElementById('whatsappModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        function contactWhatsApp(type) {
+            let phoneNumber = '';
+            let message = '';
+            
+            if (type === 'aduanas') {
+                phoneNumber = '50764127227';
+                message = 'Hola, necesito información sobre servicios aduaneros y logística en Panamá';
+            } else if (type === 'legal') {
+                phoneNumber = '50766977997';
+                message = 'Hola, necesito asesoría legal en comercio exterior con Legal Logistic Innova';
+            }
+            
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            closeWhatsAppModal();
+        }
+        
+        // Cerrar modal al hacer clic fuera de él
+        window.onclick = function(event) {
+            const modal = document.getElementById('whatsappModal');
+            if (event.target === modal) {
+                closeWhatsAppModal();
+            }
+        }
+        
         // Formulario de contacto
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -902,7 +1079,7 @@
             
             const whatsappMessage = `Hola, soy ${nombre} de ${empresa}.%0A%0AEmail: ${email}%0ATeléfono: ${telefono}%0A%0AMensaje:%0A${mensaje}%0A%0AGracias.`;
             
-            window.open(`https://wa.me/50766977997?text=${whatsappMessage}`, '_blank');
+            window.open(`https://wa.me/50764127227?text=${whatsappMessage}`, '_blank');
         });
         
         // Smooth scroll
